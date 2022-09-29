@@ -1,5 +1,38 @@
+@font-face {
+  font-family: "Oswald Regular";
+  src: url("./assets/fonts/Oswald-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Oswald Bold";
+  src: url("./assets/fonts/Oswald-Bold.ttf");
+  font-weight: 700;
+}
+:root {
+  --main-bg-color: #040f14;
+  --button-bg-color: #ff4654;
+  --font-color: #ffffff;
+  --cards-bg-color: #102130;
+  --searchbar-bg-color: #375470;
+  --dont-know-color: #afc7df;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+h1,
+h2,
+h3 {
+  font-family: "Oswald Bold";
+  color: var(--font-color);
+}
+p {
+  font-family: "Oswald Regular";
+  color: var(--font-color);
 }
