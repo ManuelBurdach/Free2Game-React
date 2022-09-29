@@ -1,0 +1,10 @@
+button {
+  border-radius: 12px;
+  background-color: var(--button-bg-color);
+  padding: 12px 24px;
+  border: none;
+  color: var(--font-color);
+  font-family: "Oswald Bold";
+  font-size: 18px;
+  text-transform: uppercase;
+}
