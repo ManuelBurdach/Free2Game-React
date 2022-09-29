@@ -1,9 +1,7 @@
 import Data from '../api/Data'
 
 const Home = () => {
-    return ( 
-        <div className="homeContainer">
-             console.log(Data);
+    
     return Data.map((Data, index) => (
         <gamesCard
         key={"gamesCard" + index}
@@ -14,8 +12,6 @@ const Home = () => {
         />
 
     ));
-        </div>
-     );
 }
  
 export default Home;

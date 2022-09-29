@@ -1,6 +1,6 @@
 import Rectangle15 from "../assets/img/Rectangle 15.png";
 import Rectangle16 from "../assets/img/Rectangle 16.png";
-import Data from "../api/Data"
+import Data from "../../api/Data"
 
 
 const Header = () => {
