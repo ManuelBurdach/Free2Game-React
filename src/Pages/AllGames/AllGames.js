@@ -13,7 +13,7 @@ const AllGames = () => {
   return (
     <>
       {/* <SortBy /> */}
-      <p className="search-value">shooter</p>
+      <p className="search-value">SHOOTER</p>
       <div className="all-games-container">
         {Data.map((Data, index) => (
           <GameCards
