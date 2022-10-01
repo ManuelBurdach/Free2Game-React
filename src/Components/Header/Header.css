@@ -13,8 +13,8 @@ header h1{
     font-size: 24px;
 }
 .sign img{
-    height: 27px;
     margin: 1rem 0;
+    object-fit:contain;
 }
 #header-search{
     
@@ -31,7 +31,8 @@ header h1{
     text-align: center;
 }
 .heroSection img{
-    width: 9rem;
+    width: 100%;
     padding-top: 1rem;
     padding: 3%;
+    border-radius: 2.7rem;
 }
