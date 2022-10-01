@@ -19,6 +19,10 @@ const Detail = () => {
           <div className="container-left">
             <img src={props.thumbnail} alt=""></img>
             <h2>Platform{props.platform}</h2>
+            <div className="game-cards-icon-details">
+              <p>{props.genre}</p>
+            </div>
+
             <MoreBtn value="PLAY NOW" />
           </div>
           <div className="container-right">
@@ -54,7 +58,6 @@ const Detail = () => {
               <p>{props.release_date}</p>
             </div>
           </div>
-
           <div className="container-right">
             <h2>Minimum System Requirements {props.platform}</h2>
             <div className="small-container-both">

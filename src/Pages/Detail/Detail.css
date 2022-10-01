@@ -32,12 +32,12 @@
 .container-right {
   width: 45%;
 }
-.container-right p {
-  max-width: 443px;
-}
+
 .small-container-left {
   margin-right: 3rem;
 }
+
+/* ===========Main Styling================*/
 .Detail h1 {
   margin-bottom: 48px;
 }
@@ -50,7 +50,19 @@
 }
 .Detail p {
   margin-bottom: 24px;
+  max-width: 443px;
 }
 .small-container h3 {
   width: 96px;
+}
+
+.game-cards-icon-details > p {
+  display: flex;
+  align-items: center;
+  width: 90px;
+  padding: 6px 12px;
+  height: 36px;
+  border: 1px solid var(--button-bg-color);
+  border-radius: 15px;
+  background-color: var(--cards-bg-color);
 }

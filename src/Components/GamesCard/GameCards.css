@@ -63,7 +63,7 @@
   align-items: center;
   padding: 11px 12px 10px;
   height: 36px;
-  border: 1px solid #ff4654;
+  border: 1px solid var(--button-bg-color);
   border-radius: 15px;
 }
 
