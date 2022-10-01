@@ -10,9 +10,6 @@ import Data from "../../Api/Data";
 import "../../Components/GamesCard/GameCards.css";
 
 const AllGames = () => {
-  //TODO wenn du auf allgame bist dann zeig dropdown menü
-  // TODO value checkbox
-
   return (
     <>
       {/* <SortBy /> */}
@@ -32,6 +29,8 @@ const AllGames = () => {
       </div>
     </>
   );
+  // TODO if any checkbox is clicked -> display searched value, if not show not
+
   // if ((user.checked = false)) {
   //   return (
   //     <>

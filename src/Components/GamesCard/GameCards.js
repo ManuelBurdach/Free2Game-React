@@ -8,8 +8,6 @@ import "./GameCards.css";
 import Windows from "../../Assets/Icons/Windows.svg";
 import Web from "../../Assets/Icons/Web.svg";
 
-// TODO props in überall da definieren wo GameCards vorkommt
-
 const GameCards = (props) => {
   return (
     <div className="game-cards-wrapper">
