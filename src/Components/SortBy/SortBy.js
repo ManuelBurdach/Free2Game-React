@@ -4,7 +4,13 @@ import "./SortBy.css";
 const SortBy = (props) => {
   return (
     <form>
-      <label htmlFor="">{props.title}</label>
+      <label htmlFor="sortBy">{props.title}</label>
+      <label htmlFor="">
+        <input type="checkbox" name="sortBy" id="" />
+      </label>
+      <label htmlFor="">
+        <input type="checkbox" name="sortBy" id="" />
+      </label>
     </form>
   );
 };
