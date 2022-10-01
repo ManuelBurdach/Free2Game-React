@@ -3,14 +3,14 @@ import "./SortBy.css";
 
 const SortBy = (props) => {
   return (
-    <form>
+    <form className="sortBy">
       <label htmlFor="sortBy">{props.title}</label>
-      <label htmlFor="">
-        <input type="checkbox" name="sortBy" id="" />
-      </label>
-      <label htmlFor="">
-        <input type="checkbox" name="sortBy" id="" />
-      </label>
+      {props.filterOptions.map((item) => (
+        <label htmlFor="">
+          <input type="checkbox" name="sortBy" id="" />
+          {item}
+        </label>
+      ))}
     </form>
   );
 };
