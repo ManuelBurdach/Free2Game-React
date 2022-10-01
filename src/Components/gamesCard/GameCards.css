@@ -1,0 +1,13 @@
+/* ================================ Game Card Component ================================ */
+
+.all-games-container {
+  width: 285px;
+  border: 1px solid red;
+}
+
+.all-games-container img {
+  width: 100%;
+}
+
+.search-value {
+}

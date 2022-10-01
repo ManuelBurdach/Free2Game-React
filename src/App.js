@@ -3,6 +3,7 @@ import "./App.css";
 
 //Import Components
 import Nav from "./Components/Nav/Nav.js";
+import AllGames from "./Pages/AllGames/AllGames";
 
 //Import BrowserRouter
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Nav />
+        <AllGames />
         <Routes>
           <Route path="/" element="" />
         </Routes>
