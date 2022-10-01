@@ -1,11 +1,12 @@
 // IMPORT COMPONENTS
+
 import GameCards from "../../Components/gamesCard/GameCards";
-import hierkommtdienav from "../../Components/nav"; //TODO
-import Header from "../../Components/header/Header";
-import hierkommtdropdown from "../../Components/dropdownMenu/"; // TODO
+import Nav from "../../Components/Nav/Nav";
+import Header from "../../Components/Header/Header";
+// import hierkommtdropdown from "../../Components/DropdownMenu/"; // TODO
 
 // IMPORT DATA
-import Data from "../../api/Data";
+import Data from "../../Api/Data";
 
 // IMPORT CSS
 import "./AllGames.css";
@@ -13,7 +14,7 @@ import "./AllGames.css";
 const AllGames = () => {
   return (
     <>
-      {/* Hier kommt die Nav */};
+      <Nav />
       <Header />
       {/* Hier kommt das Dropdownmenü hin */}
       <div className="all-games-container">

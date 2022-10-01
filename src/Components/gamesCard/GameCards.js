@@ -1,5 +1,9 @@
 // IMPORT COMPONENTS
+<<<<<<< HEAD
 import MoreBtn from "../btn/read_showMore";
+=======
+import MoreBtn from "../../Components/Btn/Read_showMore";
+>>>>>>> ff9bff7026a294be363c47591a78e5986de18148
 
 // IMPORT CSS
 import "./GameCards.css";
