@@ -1,12 +1,17 @@
-import "./Nav.css";
-import { Link } from "react-router-dom";
-
-import Games_icon from "../../Assets/Icons/Games_icon.svg";
-import Recently_added_icon from "../../Assets/Icons/Recently_added_icon.svg";
-import Home_icon from "../../Assets/Icons/Home_icon.svg";
+// IMPORT MODULES
 import React, { useState } from "react";
 import { RiMenuLine } from "react-icons/ri";
 
+// IMPORT CSS
+import "./Nav.css";
+import { Link } from "react-router-dom";
+
+// IMPORT IMAGES
+import Games_icon from "../../Assets/Icons/Games_icon.svg";
+import Recently_added_icon from "../../Assets/Icons/Recently_added_icon.svg";
+import Home_icon from "../../Assets/Icons/Home_icon.svg";
+
+// AUFBAU DER NAV
 function Sidebar() {
   const sidebarCollapsed = localStorage.getItem("sidebar-collapsed");
   const [isExpanded, setIsExpanded] = useState(sidebarCollapsed ? false : true);
