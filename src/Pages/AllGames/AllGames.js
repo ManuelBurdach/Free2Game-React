@@ -1,7 +1,7 @@
 // IMPORT COMPONENTS
 
 import GameCards from "../../Components/GamesCard/GameCards";
-// import hierkommtdropdown from "../../Components/DropdownMenu/"; // TODO
+import SortBy from "../../Components/SortBy/SortBy";
 
 // IMPORT DATA
 import Data from "../../Api/Data";
@@ -15,15 +15,16 @@ const AllGames = () => {
 
   return (
     <>
-      {/* Hier kommt das Dropdownmenü hin {value.checkbox} */}
+      {/* <SortBy /> */}
       <p className="search-value">shooter</p>
       <div className="all-games-container">
         {Data.map((Data, index) => (
           <GameCards
+            card={"allGames"}
             key={"Game" + index}
             thumbnail={Data.thumbnail}
             title={Data.title}
-            // short_description={Data.short_description}
+            short_description={Data.short_description}
             platform={Data.platform}
             genre={Data.genre}
           />

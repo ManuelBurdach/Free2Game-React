@@ -16,7 +16,12 @@ const GameCards = (props) => {
       <img src={props.thumbnail} alt="Thumbnail-game" />
       <div className="game-info-wrapper">
         <h3>{props.title}</h3>
-        <p>{props.short_description}</p>
+        {props.card != "allGames" ? (
+          <p className="short_description">{props.short_description}</p>
+        ) : (
+          <></>
+        )}
+
         <MoreBtn value="READ MORE" />
         <div className="game-cards-icon">
           {props.platform.includes("Windows", "Web") ? (
