@@ -10,11 +10,13 @@ const Header = () => {
   return (
     <header>
       
-      <div className="topBar"><div>
-        <img src={Rect15} alt="" />
-        <img src={Rect16} alt="" />
+      <div className="topBar">
+        <div className="topBarLogo">
+          <div className="sign">        <img src={Rect15} alt="" />
+        <img src={Rect16} alt="" /></div>
+
         <h1>FREE2GAME</h1>
-        <h2>{"to Do"}</h2>
+        <h2>{""}</h2>
       </div>
       <input
         type="text"
