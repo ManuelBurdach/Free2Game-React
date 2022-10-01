@@ -1,13 +1,74 @@
-/* ================================ Game Card Component ================================ */
-
-.all-games-container {
-  width: 285px;
-  border: 1px solid red;
-}
-
-.all-games-container img {
+.game-cards-wrapper > img {
+  border-radius: 24px;
   width: 100%;
 }
 
-.search-value {
+.game-cards-wrapper {
+  width: 285px;
+  /* height: auto; */
+  background-color: var(--cards-bg-color);
+  border-radius: 24px;
 }
+
+.game-info-wrapper {
+  margin: 36px 24px;
+}
+
+.game-info-wrapper h3 {
+  height: 44px;
+  margin-bottom: 24px;
+}
+
+.game-info-wrapper h3 + p {
+  margin-bottom: 36px;
+}
+
+.game-cards-icon {
+  display: flex;
+  gap: 12px;
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.game-cards-icon > img,
+.game-cards-icon > img + p {
+  display: flex;
+  align-items: center;
+  padding: 11px 12px 10px;
+  height: 36px;
+  border: 1px solid #ff4654;
+  border-radius: 15px;
+}
+
+.game-cards-icon > img + p {
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* ================================ Game Card Component (All Game Page) ================================ */
+
+.all-games-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* ================================ Game Card Component (Home Page -> Top 4 Games for PC) ================================ */
+
+.all-games-container-pc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.game-cards-wrapper {
+  width: 100%;
+}
+
+.game-cards-wrapper:nth-of-type(1) {
+  grid-row: 1/4;
+}
+
+/* ================================ Game Card Component (Home Page -> Top 4 Games for Browser) ================================ */

@@ -1,23 +1,20 @@
 // IMPORT COMPONENTS
 
 import GameCards from "../../Components/GamesCard/GameCards";
-import Nav from "../../Components/Nav/Nav";
-// import Header from "../../Components/Header/Header";
 // import hierkommtdropdown from "../../Components/DropdownMenu/"; // TODO
 
 // IMPORT DATA
 import Data from "../../Api/Data";
 
 // IMPORT CSS
-import "./AllGames.css";
-
-// checkbox muss definiert werden und dann mit USER ersetzen
+import "../../Components/GamesCard/GameCards.css";
 
 const AllGames = () => {
+  //TODO wenn du auf allgame bist dann zeig dropdown menü
+  // TODO value checkbox
+
   return (
     <>
-      <Nav />
-      {/* <Header /> */}
       {/* Hier kommt das Dropdownmenü hin {value.checkbox} */}
       <p className="search-value">shooter</p>
       <div className="all-games-container">
@@ -26,7 +23,7 @@ const AllGames = () => {
             key={"Game" + index}
             thumbnail={Data.thumbnail}
             title={Data.title}
-            short_description={Data.short_description}
+            // short_description={Data.short_description}
             platform={Data.platform}
             genre={Data.genre}
           />

@@ -13,7 +13,6 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Nav />
-        <AllGames />
         <Routes>
           <Route path="/" element="" />
         </Routes>
