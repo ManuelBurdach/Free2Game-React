@@ -21,18 +21,12 @@ function App() {
       <div className="App">
         <Header />
         <Nav />
-<<<<<<< HEAD
-        <Routes>
-          <Route path="/" element="" />
-        </Routes>
-=======
         <main>
           <Routes>
-            <Route path="/" element={""} />
+            <Route path="/" element={<Home />} />
             <Route path="/AllGames" element={<AllGames />} />
           </Routes>
         </main>
->>>>>>> 66b547c0250b0912785d50a768dbde1819da3b22
       </div>
     </BrowserRouter>
   );
