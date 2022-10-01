@@ -1,43 +1,40 @@
 let Data = [
   {
-    id: 521,
-    title: "Diablo Immortal",
-    thumbnail: "https://www.freetogame.com/g/521/thumbnail.jpg",
-    status: "Live",
-    short_description:
-      "Built for mobile and also released on PC, Diablo Immortal fills in the gaps between Diablo II and III in an MMOARPG environment.",
-    description:
-      "The demon fighting doesn’t have to stop when you walk away from the computer thanks to Blizzard Entertainment’s Diablo Immortal. Built for mobile and also released on PC, the game fills in the gaps between Diablo II and III in an MMOARPG environment.\r\n\r\nDiablo Immortal picks up following the presumed death of the Archangel Tyrael, during which time mankind must deal with the fallout. One of the many problems are the fragments of the shattered Worldstone spread across the land, waiting for Diablo’s underlings to collect them in an attempt to bring about his return.\r\n\r\nPlayers can choose from one of six classes in Diablo Immortal. These are the classic Barbarian, the Crusader, the Demon Hunter, the Monk, the Necromancer, and the Wizard. All six classes features their own unique skills and abilities.\r\n\r\nThe game also introduces six new bosses, ranging from The Skeleton King to the Glacial Colossus. Each offers players a unique challenge, and all are found in places filled with danger. So, players will want to be well prepared before taking them on.\r\n",
-    game_url: "https://www.freetogame.com/open/diablo-immortal",
-    genre: "MMOARPG",
-    platform: "Windows",
-    publisher: "Blizzard Entertainment",
-    developer: "Blizzard Entertainment",
-    release_date: "2022-06-02",
-    freetogame_profile_url: "https://www.freetogame.com/diablo-immortal",
-    minimum_system_requirements: {
-      os: "Windows 7 / Windows 8 / Windows 10 / Windows 11 (64-bit)",
-      processor: "Intel Core i3 or AMD FX-8100",
-      memory: "4 GB RAM",
-      graphics:
-        "NVIDIA GeForce GTX 460, ATI Radeon HD 6850 or Intel HD Graphics 530",
-      storage: "?",
+    "id": 286,
+    "title": "League of Legends",
+    "thumbnail": "https://www.freetogame.com/g/286/thumbnail.jpg",
+    "status": "Live",
+    "short_description": "A free-to-play MOBA game, and one of the most played pc game in the world.",
+    "description": "Did you seriously come to this page to get a description of what League of Legends was? Oh well… if you showed up here I should at least give you the basics. League of Legends is a free-to-play competitive MOBA game, and one of the most played video game in the world, developed by Riot Games.\r\n\r\nPlayers are tasked with teaming up with other players and squaring off against another team of players, typically in 5v5 matches. Three lanes connect a team’s base (or Nexus) to the other team’s base. Defensive measures for both teams also reside in each lane. Players choose a hero from over 120 Champions. Each character has its own skill set and abilities that help it excel in certain areas of the game. The key to winning matches is teamwork and solid reactions to enemy abilities. A strong understanding of the item meta game and what helps each particular champion is certainly desirable.\r\n\r\nPush each lane and try to take out your opponent’s defensive turrets (and their ever spawning creeps – small NPC minions that blindly move forward on each lane) and enemy champions on your way to taking out the enemy Nexus and scoring yourself a win.\r\n\r\nAlong the way, your champion will gain experience and gold and level up their abilities and allow you to purchase game items to modify your champion’s stats and performance.\r\n\r\nThese battles take place in two different game modes across a total of 4 available maps…although you’re probably only going to ever see one map unless you play in games against AI bot opponents.\r\n\r\nIn addition to in-game leveling and ranked matches each season, players also have modifiers on their profile through the use of Rune Pages. These pages allow players to “socket” Glyphs, Marks, Seals, and Quintessences to modify stats for you as the player. These modifications are then placed on any Champion you choose to play.\r\n\r\nMatchmaking in League of Legends is based primarily on your skill and past match performances. The automated system attempts to match competitors up with players of a similar skill level so as to avoid blowout matches.\r\n\r\nLeague of Legends is often held up as the quintessential free-to-play model in that no aspect of gameplay (besides arguably additional rune pages even though they are not essential) is locked behind a cash shop purchase. The cash shop houses skins, cosmetics, and Champions and currency to purchase these items can be bought with real world money or farmed in-game.",
+    "game_url": "https://www.freetogame.com/open/league-of-legends",
+    "genre": "MOBA",
+    "platform": "Windows",
+    "publisher": "Riot Games",
+    "developer": "Riot Games",
+    "release_date": "2009-10-27",
+    "freetogame_profile_url": "https://www.freetogame.com/league-of-legends",
+    "minimum_system_requirements": {
+    "os": "Windows XP, Vista, 7, 8",
+    "processor": "2 GHz Modern processor",
+    "memory": "1 GB for Windows XP. 2 GB for everything else",
+    "graphics": "Shadow 2.0 capable video card",
+    "storage": "8 GB"
     },
-    screenshots: [
-      {
-        id: 1277,
-        image: "https://www.freetogame.com/g/521/diablo-immortal-1.jpg",
-      },
-      {
-        id: 1278,
-        image: "https://www.freetogame.com/g/521/diablo-immortal-2.jpg",
-      },
-      {
-        id: 1279,
-        image: "https://www.freetogame.com/g/521/diablo-immortal-3.jpg",
-      },
-    ],
-  },
+    "screenshots": [
+    {
+    "id": 754,
+    "image": "https://www.freetogame.com/g/286/League-of-Legends-1.jpg"
+    },
+    {
+    "id": 755,
+    "image": "https://www.freetogame.com/g/286/League-of-Legends-2.jpg"
+    },
+    {
+    "id": 756,
+    "image": "https://www.freetogame.com/g/286/League-of-Legends-4.jpg"
+    }
+    ]
+    },
   {
     id: 517,
     title: "Lost Ark",

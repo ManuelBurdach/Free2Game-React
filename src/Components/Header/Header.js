@@ -2,6 +2,7 @@ import Rect15 from "../../Assets/Img/Rect15.png";
 import Rect16 from "../../Assets/Img/Rect16.png";
 import Elipse from "../../Assets/Img/Ellipse 2.png";
 import Line from "../../Assets/Img/Line 5.png";
+import lol from "../../Assets/Img/lol.png"
 import Data from "../../Api/Data";
 import "./Header.css";
 
@@ -34,10 +35,13 @@ const Header = () => {
         </div>
       </div>
       <section className="heroSection">
-        <img src={Data[randomImg].screenshots[randomImg2].image} alt="" />
+        <img src={lol} alt=""/>
       </section>
     </header>
   );
 };
 
 export default Header;
+
+
+// {Data[0].screenshots[1].image}
