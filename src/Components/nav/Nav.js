@@ -1,4 +1,4 @@
-import "../nav/Nav.css";
+import "./Nav.css";
 
 import Games_icon from "../../assets/icons/Games_icon.svg";
 import Recently_added_icon from "../../assets/icons/Recently_added_icon.svg";

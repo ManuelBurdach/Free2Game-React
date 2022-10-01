@@ -1,10 +1,11 @@
-import Data from '../../api/Data'
+import Data from '../../Api/Data'
 
 const Home = () => {
     
     return Data.map((Data, index) => (
-        <gamesCard
+        <GamesCard
         key={"gamesCard" + index}
+        img={Data.thumbnail}
         title={Data.title}
         short_description={Data.short_description}
         platform={Data.platform}
