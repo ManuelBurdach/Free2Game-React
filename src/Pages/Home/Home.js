@@ -1,21 +1,24 @@
-import GameCards from "../../Components/GamesCard/GameCards";
-import Data from "../../Api/Data";
 import "./Home.css";
+import AllGames from "../AllGames/AllGames";
+import MoreBtn from "../../Components/Btn/Read_showMore";
 
 const Home = () => {
   return (
     <>
-      <section className="recentlyadded">
-        {Data.map((Data, index) => (
-          <GameCards
-            key={"gamesCard" + index}
-            img={Data.thumbnail}
-            title={Data.title}
-            short_description={Data.short_description}
-            platform={Data.platform}
-            CarYear={Data.CarYear}
-          />
-        ))}
+      <section className="homeSection">
+        <h2>Recently Added</h2>
+        <AllGames />
+        <MoreBtn value="Show more" />
+      </section>
+      <section className="homeSection">
+        <h2>Recently Added</h2>
+        <AllGames />
+        <MoreBtn value="Show more" />
+      </section>
+      <section className="homeSection">
+        <h2>Recently Added</h2>
+        <AllGames />
+        <MoreBtn value="Show more" />
       </section>
     </>
   );
