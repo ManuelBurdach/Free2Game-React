@@ -1,8 +1,8 @@
-import "../nav/Nav.css";
+import "./Nav.css";
 
-import Games_icon from "../../assets/icons/Games_icon.svg";
-import Recently_added_icon from "../../assets/icons/Recently_added_icon.svg";
-import Home_icon from "../../assets/icons/Home_icon.svg";
+import Games_icon from "../../Assets/Icons/Games_icon.svg";
+import Recently_added_icon from "../../Assets/Icons/Recently_added_icon.svg";
+import Home_icon from "../../Assets/Icons/Home_icon.svg";
 
 const Nav = () => {
   return (
@@ -14,6 +14,7 @@ const Nav = () => {
             <span></span>
             <div className="test">
               <img src={Home_icon} alt="hi"></img>
+
               <img src={Games_icon} alt="hi"></img>
               <img src={Recently_added_icon} alt="hi"></img>
             </div>

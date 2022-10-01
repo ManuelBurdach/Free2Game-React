@@ -1,11 +1,11 @@
 // IMPORT COMPONENTS
-import GameCards from "../../Components/gamesCard/GameCards";
-import hierkommtdienav from "../../Components/nav"; //TODO
-import Header from "../../Components/header/Header";
+import GameCards from "../../Components/GamesCard/GameCards";
+import hierkommtdienav from "../../Components/Nav"; //TODO
+import Header from "../../Components/Header/Header";
 import hierkommtdropdown from "../../Components/dropdownMenu/"; // TODO
 
 // IMPORT DATA
-import Data from "../../api/Data";
+import Data from "../../Api/Data";
 
 // IMPORT CSS
 import "./AllGames.css";

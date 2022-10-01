@@ -1,11 +1,10 @@
 import Rectangle15 from "../assets/img/Rectangle 15.png";
 import Rectangle16 from "../assets/img/Rectangle 16.png";
-import Data from "../../api/Data"
-
+import Data from "../../Api/Data";
 
 const Header = () => {
-    const headImg = Data[0].screenshots.image;
-    return (
+  const headImg = Data[0].screenshots.image;
+  return (
     <header>
       <div>
         <img src={Rectangle15} alt="" />
@@ -17,8 +16,8 @@ const Header = () => {
         id="header-search"
         placeholder="Search Game"
         name="s"
-      /> <br />
-
+      />{" "}
+      <br />
       <img src={headImg} alt="" />
     </header>
   );
