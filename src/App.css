@@ -50,9 +50,18 @@ h3 {
   font-size: 18px;
   line-height: 21.6px;
 }
+
 p {
   font-family: "Oswald Regular";
   color: var(--font-color);
   font-size: 16px;
   line-height: 24.34px;
+}
+
+main {
+  margin-left: 52px;
+}
+
+header {
+  margin-left: 52px;
 }
