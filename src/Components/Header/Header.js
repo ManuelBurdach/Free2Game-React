@@ -2,14 +2,15 @@ import Rectangle15 from "../assets/img/Rectangle 15.png";
 import Rectangle16 from "../assets/img/Rectangle 16.png";
 import Data from "../../Api/Data";
 
-const Header = () => {
-  const headImg = Data[0].screenshots.image;
+const Header = (props) => {
+  // const headImg = Data[0].screenshots.image;
   return (
     <header>
       <div>
         <img src={Rectangle15} alt="" />
         <img src={Rectangle16} alt="" />
         <h1>FREE2GAME</h1>
+        <h2>{props.description}</h2>
       </div>
       <input
         type="text"
@@ -18,7 +19,7 @@ const Header = () => {
         name="s"
       />{" "}
       <br />
-      <img src={headImg} alt="" />
+      <img src={props.screenshots.image} alt="" />
     </header>
   );
 };
