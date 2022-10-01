@@ -1,16 +1,18 @@
-import Rectangle15 from "../assets/img/Rectangle 15.png";
-import Rectangle16 from "../assets/img/Rectangle 16.png";
+import Rect15 from "../../Assets/Img/Rect15.png";
+import Rect16 from "../../Assets/Img/Rect16.png";
 import Data from "../../Api/Data";
 
-const Header = (props) => {
+const Header = () => {
   // const headImg = Data[0].screenshots.image;
+   let randomImg = Math.floor(Math.random() * Data.length);
+   let randomImg2 = Math.floor(Math.random() * 3);
   return (
     <header>
       <div>
-        <img src={Rectangle15} alt="" />
-        <img src={Rectangle16} alt="" />
+        <img src={Rect15} alt="" />
+        <img src={Rect16} alt="" />
         <h1>FREE2GAME</h1>
-        <h2>{props.description}</h2>
+        <h2>{"to Do"}</h2>
       </div>
       <input
         type="text"
@@ -19,7 +21,8 @@ const Header = (props) => {
         name="s"
       />{" "}
       <br />
-      <img src={props.screenshots.image} alt="" />
+      <img src={ Data[randomImg].screenshots[randomImg2].image 
+} alt="" />
     </header>
   );
 };
