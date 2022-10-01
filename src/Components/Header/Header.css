@@ -17,10 +17,21 @@ header h1{
     margin: 1rem 0;
 }
 #header-search{
-    height: 2rem;
-    margin: 1rem 0; 
+    
+}
+.searchBar{
+    border-radius: 1rem;
+    background-color: var(--searchbar-bg-color);
+}
+.searchBar input{
+    display: inline-block;
+    background-color: transparent;
+    height: 100%;
+    border: 0;
+    text-align: center;
 }
 .heroSection img{
     width: 9rem;
     padding-top: 1rem;
+    padding: 3%;
 }
