@@ -1,7 +1,13 @@
-header{
+.topBar{
     display: flex;
     justify-content: space-between;
 }
 header h1{
     color:white;
+}
+#headerSearch{
+    margin-left: auto;
+}
+.heroSection img{
+    width: 9rem;
 }
