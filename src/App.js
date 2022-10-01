@@ -11,6 +11,7 @@ import Header from "./Components/Header/Header.js";
 //Import Pages
 import AllGames from "./Pages/AllGames/AllGames";
 import Home from "./Pages/Home/Home";
+import Detail from "./Pages/Detail/Detail";
 
 //Import BrowserRouter
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -21,18 +22,13 @@ function App() {
       <div className="App">
         <Header />
         <Nav />
-<<<<<<< HEAD
-        <Routes>
-          <Route path="/" element="" />
-        </Routes>
-=======
         <main>
           <Routes>
             <Route path="/" element={""} />
             <Route path="/AllGames" element={<AllGames />} />
+            <Route path="/Details//*" element={<Detail />} />
           </Routes>
         </main>
->>>>>>> 66b547c0250b0912785d50a768dbde1819da3b22
       </div>
     </BrowserRouter>
   );
