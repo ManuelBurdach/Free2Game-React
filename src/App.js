@@ -1,13 +1,16 @@
 //Import Css
 import "./App.css";
 
+//Import Api
 import Data from "./Api/Data";
 
 //Import Components
 import Nav from "./Components/Nav/Nav.js";
-import Header from "./Components/Header/Header.js"
-import AllGames from "./Pages/AllGames/AllGames";
+import Header from "./Components/Header/Header.js";
 
+//Import Pages
+import AllGames from "./Pages/AllGames/AllGames";
+import Home from "./Pages/Home/Home";
 
 //Import BrowserRouter
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -17,13 +20,11 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-
         <Nav />
-        <AllGames />
         <Routes>
-          <Route path="/" element="" />
+          <Route path="/" element={""} />
+          <Route path="/AllGames" element={<AllGames />} />
         </Routes>
-       
       </div>
     </BrowserRouter>
   );
