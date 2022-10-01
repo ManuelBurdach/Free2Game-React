@@ -1,5 +1,5 @@
 import "./Nav.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Games_icon from "../../Assets/Icons/Games_icon.svg";
 import Recently_added_icon from "../../Assets/Icons/Recently_added_icon.svg";
@@ -27,18 +27,24 @@ function Sidebar() {
         <RiMenuLine className="sidebar-icon" onClick={handleToggler} />
       </div>
       <div className="sidebar-items">
-        <div className="item">
-          <img src={Home_icon}></img>
-          <h3 className="sidebar-text">All Games</h3>
-        </div>
-        <div className="item">
-          <img src={Games_icon}></img>
-          <h3 className="sidebar-text">All Games</h3>
-        </div>
-        <div className="item">
-          <img src={Recently_added_icon}></img>
-          <h3 className="sidebar-text">All Games</h3>
-        </div>
+        <Link to="/">
+          <div className="item">
+            <img src={Home_icon} alt="Icon Home"></img>
+            <h3 className="sidebar-text">Home</h3>
+          </div>
+        </Link>
+        <Link to="/AllGames">
+          <div className="item">
+            <img src={Games_icon} alt="Icon All Games"></img>
+            <h3 className="sidebar-text">All Games</h3>
+          </div>
+        </Link>
+        <Link to="/RecentlyAdded">
+          <div className="item">
+            <img src={Recently_added_icon} alt="Icon Recently Added"></img>
+            <h3 className="sidebar-text">Recently Added</h3>
+          </div>
+        </Link>
       </div>
     </div>
   );

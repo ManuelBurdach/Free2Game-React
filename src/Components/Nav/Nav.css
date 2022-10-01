@@ -26,14 +26,12 @@
 }
 .sidebar-items {
   display: flex;
-  margin-top: 20vh;
+  margin-top: 30vh;
   flex-direction: column;
-  margin-left: -5px;
 }
 .sidebar-items .item {
   display: flex;
   align-items: center;
-  padding: 8px 8px;
   border-radius: 10px;
   transition: background-color 0.2s;
   cursor: pointer;
@@ -54,4 +52,8 @@
 .Sidebar.collapsed .sidebar-text,
 .Sidebar.collapsed .sidebar-logo {
   display: none;
+}
+
+a {
+  text-decoration: none;
 }
