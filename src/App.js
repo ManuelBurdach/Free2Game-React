@@ -1,6 +1,11 @@
 //Import Css
 import "./App.css";
+
+//Import Components
 import Nav from "./Components/Nav/Nav.js";
+
+//Import BrowserRouter
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
