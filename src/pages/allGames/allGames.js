@@ -1,15 +1,9 @@
 // IMPORT COMPONENTS
-<<<<<<< HEAD
+
 import GameCards from "../../Components/gamesCard/GameCards";
 import Nav from "../../Components/Nav/Nav";
 import Header from "../../Components/Header/Header";
-import hierkommtdropdown from "../../Components/DropdownMenu/"; // TODO
-=======
-import GameCards from "../../Components/GamesCard/GameCards";
-import hierkommtdienav from "../../Components/Nav"; //TODO
-import Header from "../../Components/Header/Header";
-import hierkommtdropdown from "../../Components/dropdownMenu/"; // TODO
->>>>>>> d81cfd43b5c0a4f12f83ff86ed600a1a2b9b3f2c
+// import hierkommtdropdown from "../../Components/DropdownMenu/"; // TODO
 
 // IMPORT DATA
 import Data from "../../Api/Data";
