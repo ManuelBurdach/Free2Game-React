@@ -9,14 +9,16 @@ const Nav = () => {
     <div>
       <nav>
         <div className="hamburger-menu">
-          <input id="menu__toggle" type="checkbox" />
+          <input id="menu__toggle" onClick={click()} type="checkbox" />
           <label className="menu__btn" htmlFor="menu__toggle">
             <span></span>
-            <div className="test">
-              <img src={Home_icon} alt="hi"></img>
+            <div className="boxshadow" id="bla">
+              <div className="test">
+                <img src={Home_icon} alt="hi"></img>
 
-              <img src={Games_icon} alt="hi"></img>
-              <img src={Recently_added_icon} alt="hi"></img>
+                <img src={Games_icon} alt="hi"></img>
+                <img src={Recently_added_icon} alt="hi"></img>
+              </div>
             </div>
 
             {/* <Link to="/">{Home_icon}</Link> */}
@@ -37,6 +39,10 @@ const Nav = () => {
       </nav>
     </div>
   );
+};
+
+let click = () => {
+  document.getElementByClassName("boxshadow").remove();
 };
 
 export default Nav;
