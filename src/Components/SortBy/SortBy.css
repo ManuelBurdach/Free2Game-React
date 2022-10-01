@@ -1,0 +1,36 @@
+.sortBy {
+  max-width: 200px;
+}
+
+.sortBy label {
+  padding: 12px 24px;
+  border-radius: 12px;
+  max-width: 100%;
+  color: var(--font-color);
+  font-family: "Oswald Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
+}
+
+.sortBy label:nth-of-type(1) {
+  background-color: var(--button-bg-color);
+}
+
+.sortBy label:not(:nth-of-type(1)) {
+  background-color: var(--searchbar-bg-color);
+  margin: 10px;
+}
+
+.sortBy label:not(:nth-of-type(1))::before {
+  width: 10px;
+  height: 10px;
+  background-color: var(--searchbar-bg-color);
+  border: 2px solid #fff;
+  display: block;
+  content: "";
+  float: left;
+  margin-right: 5px;
+  z-index: 5;
+  position: relative;
+}
