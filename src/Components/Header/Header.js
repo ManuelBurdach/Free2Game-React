@@ -5,6 +5,7 @@ import Rect16 from "../../Assets/Img/Rect16.png";
 import lol from "../../Assets/Img/lol.png";
 import lol2 from "../../Assets/Img/lol2.png";
 import lol3 from "../../Assets/Img/lol3.png";
+import lol4 from "../../Assets/Img/lol4.png";
 import Search from "../../Assets/Img/search.ico";
 import Data from "../../Api/Data";
 
@@ -37,7 +38,7 @@ const Header = () => {
         </div>
       </div>
       <section className="heroSection">
-      {location.pathname === "/AllGames" ? <img src={lol} alt="" /> :location.pathname === "/RecentlyAdded" ? <img src={lol2} alt="" /> :location.pathname === "/Detail//*" ? <img src={lol3} alt="" /> : ""}      </section>
+      {location.pathname === "/AllGames" ? <img src={lol} alt="" /> :location.pathname === "/RecentlyAdded" ? <img src={lol2} alt="" /> :location.pathname === "/Detail//*" ? <img src={lol3} alt="" /> : <img src={lol4} alt="" />}      </section>
     </header>
   );
 };
