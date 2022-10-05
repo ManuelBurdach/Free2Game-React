@@ -1,21 +1,28 @@
+import { useParams, useLocation } from "react-router-dom";
+
 import Rect15 from "../../Assets/Img/Rect15.png";
 import Rect16 from "../../Assets/Img/Rect16.png";
-import Elipse from "../../Assets/Img/Ellipse 2.png";
-import Line from "../../Assets/Img/Line 5.png";
-import lol from "../../Assets/Img/lol.png"
+import lol from "../../Assets/Img/lol.png";
+import lol2 from "../../Assets/Img/lol2.png";
+import lol3 from "../../Assets/Img/lol3.png";
+import Search from "../../Assets/Img/search.ico";
 import Data from "../../Api/Data";
+
 import "./Header.css";
 
 const Header = () => {
   // const headImg = Data[0].screenshots.image;
   let randomImg = Math.floor(Math.random() * Data.length);
   let randomImg2 = Math.floor(Math.random() * 3);
+  // let params = useParams();
+  const location = useLocation();
+
+  console.log("pathname", location);
   return (
     <header>
       <div className="topBar">
         <div className="topBarLogo">
           <div className="sign">
-            {" "}
             <img src={Rect15} alt="" />
             <img src={Rect16} alt="" />
           </div>
@@ -24,24 +31,19 @@ const Header = () => {
           <h2>{""}</h2>
         </div>
         <div className="searchBar">
-          <input
-            type="text"
-            id="header-search"
+          <input type="text" id="header-search" name="s" />
 
-            name="s"
-          />
-          <img src={Elipse} alt="" />
-          <img src={Line} alt="" />
+          <img src={Search} alt="" />
         </div>
       </div>
       <section className="heroSection">
-        <img src={lol} alt=""/>
-      </section>
+      {location.pathname === "/AllGames" ? <img src={lol} alt="" /> :location.pathname === "/RecentlyAdded" ? <img src={lol2} alt="" /> :location.pathname === "/Detail//*" ? <img src={lol3} alt="" /> : ""}      </section>
     </header>
   );
 };
 
 export default Header;
 
-
 // {Data[0].screenshots[1].image}
+// if (params == "AllGames"){<img src={lol} alt="" />}else if(params ==
+//   "RecentlyAdded"){<img src={lol} alt="" />}else if(params == "/Detail//*"){<img src={lol} alt="" />}
