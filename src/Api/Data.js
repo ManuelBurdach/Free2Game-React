@@ -1,40 +1,42 @@
 let Data = [
   {
-    "id": 286,
-    "title": "League of Legends",
-    "thumbnail": "https://www.freetogame.com/g/286/thumbnail.jpg",
-    "status": "Live",
-    "short_description": "A free-to-play MOBA game, and one of the most played pc game in the world.",
-    "description": "Did you seriously come to this page to get a description of what League of Legends was? Oh well… if you showed up here I should at least give you the basics. League of Legends is a free-to-play competitive MOBA game, and one of the most played video game in the world, developed by Riot Games.\r\n\r\nPlayers are tasked with teaming up with other players and squaring off against another team of players, typically in 5v5 matches. Three lanes connect a team’s base (or Nexus) to the other team’s base. Defensive measures for both teams also reside in each lane. Players choose a hero from over 120 Champions. Each character has its own skill set and abilities that help it excel in certain areas of the game. The key to winning matches is teamwork and solid reactions to enemy abilities. A strong understanding of the item meta game and what helps each particular champion is certainly desirable.\r\n\r\nPush each lane and try to take out your opponent’s defensive turrets (and their ever spawning creeps – small NPC minions that blindly move forward on each lane) and enemy champions on your way to taking out the enemy Nexus and scoring yourself a win.\r\n\r\nAlong the way, your champion will gain experience and gold and level up their abilities and allow you to purchase game items to modify your champion’s stats and performance.\r\n\r\nThese battles take place in two different game modes across a total of 4 available maps…although you’re probably only going to ever see one map unless you play in games against AI bot opponents.\r\n\r\nIn addition to in-game leveling and ranked matches each season, players also have modifiers on their profile through the use of Rune Pages. These pages allow players to “socket” Glyphs, Marks, Seals, and Quintessences to modify stats for you as the player. These modifications are then placed on any Champion you choose to play.\r\n\r\nMatchmaking in League of Legends is based primarily on your skill and past match performances. The automated system attempts to match competitors up with players of a similar skill level so as to avoid blowout matches.\r\n\r\nLeague of Legends is often held up as the quintessential free-to-play model in that no aspect of gameplay (besides arguably additional rune pages even though they are not essential) is locked behind a cash shop purchase. The cash shop houses skins, cosmetics, and Champions and currency to purchase these items can be bought with real world money or farmed in-game.",
-    "game_url": "https://www.freetogame.com/open/league-of-legends",
-    "genre": "MOBA",
-    "platform": "Windows",
-    "publisher": "Riot Games",
-    "developer": "Riot Games",
-    "release_date": "2009-10-27",
-    "freetogame_profile_url": "https://www.freetogame.com/league-of-legends",
-    "minimum_system_requirements": {
-    "os": "Windows XP, Vista, 7, 8",
-    "processor": "2 GHz Modern processor",
-    "memory": "1 GB for Windows XP. 2 GB for everything else",
-    "graphics": "Shadow 2.0 capable video card",
-    "storage": "8 GB"
+    id: 286,
+    title: "League of Legends",
+    thumbnail: "https://www.freetogame.com/g/286/thumbnail.jpg",
+    status: "Live",
+    short_description:
+      "A free-to-play MOBA game, and one of the most played pc game in the world.",
+    description:
+      "Did you seriously come to this page to get a description of what League of Legends was? Oh well… if you showed up here I should at least give you the basics. League of Legends is a free-to-play competitive MOBA game, and one of the most played video game in the world, developed by Riot Games.\r\n\r\nPlayers are tasked with teaming up with other players and squaring off against another team of players, typically in 5v5 matches. Three lanes connect a team’s base (or Nexus) to the other team’s base. Defensive measures for both teams also reside in each lane. Players choose a hero from over 120 Champions. Each character has its own skill set and abilities that help it excel in certain areas of the game. The key to winning matches is teamwork and solid reactions to enemy abilities. A strong understanding of the item meta game and what helps each particular champion is certainly desirable.\r\n\r\nPush each lane and try to take out your opponent’s defensive turrets (and their ever spawning creeps – small NPC minions that blindly move forward on each lane) and enemy champions on your way to taking out the enemy Nexus and scoring yourself a win.\r\n\r\nAlong the way, your champion will gain experience and gold and level up their abilities and allow you to purchase game items to modify your champion’s stats and performance.\r\n\r\nThese battles take place in two different game modes across a total of 4 available maps…although you’re probably only going to ever see one map unless you play in games against AI bot opponents.\r\n\r\nIn addition to in-game leveling and ranked matches each season, players also have modifiers on their profile through the use of Rune Pages. These pages allow players to “socket” Glyphs, Marks, Seals, and Quintessences to modify stats for you as the player. These modifications are then placed on any Champion you choose to play.\r\n\r\nMatchmaking in League of Legends is based primarily on your skill and past match performances. The automated system attempts to match competitors up with players of a similar skill level so as to avoid blowout matches.\r\n\r\nLeague of Legends is often held up as the quintessential free-to-play model in that no aspect of gameplay (besides arguably additional rune pages even though they are not essential) is locked behind a cash shop purchase. The cash shop houses skins, cosmetics, and Champions and currency to purchase these items can be bought with real world money or farmed in-game.",
+    game_url: "https://www.freetogame.com/open/league-of-legends",
+    genre: "MOBA",
+    platform: "Windows",
+    publisher: "Riot Games",
+    developer: "Riot Games",
+    release_date: "2009-10-27",
+    freetogame_profile_url: "https://www.freetogame.com/league-of-legends",
+    minimum_system_requirements: {
+      os: "Windows XP, Vista, 7, 8",
+      processor: "2 GHz Modern processor",
+      memory: "1 GB for Windows XP. 2 GB for everything else",
+      graphics: "Shadow 2.0 capable video card",
+      storage: "8 GB",
     },
-    "screenshots": [
-    {
-    "id": 754,
-    "image": "https://www.freetogame.com/g/286/League-of-Legends-1.jpg"
-    },
-    {
-    "id": 755,
-    "image": "https://www.freetogame.com/g/286/League-of-Legends-2.jpg"
-    },
-    {
-    "id": 756,
-    "image": "https://www.freetogame.com/g/286/League-of-Legends-4.jpg"
-    }
-    ]
-    },
+    screenshots: [
+      {
+        id: 754,
+        image: "https://www.freetogame.com/g/286/League-of-Legends-1.jpg",
+      },
+      {
+        id: 755,
+        image: "https://www.freetogame.com/g/286/League-of-Legends-2.jpg",
+      },
+      {
+        id: 756,
+        image: "https://www.freetogame.com/g/286/League-of-Legends-4.jpg",
+      },
+    ],
+  },
   {
     id: 517,
     title: "Lost Ark",
@@ -149,36 +151,36 @@ let Data = [
       },
     ],
   },
-  {
-    id: 345,
-    title: "Forge of Empires",
-    thumbnail: "https://www.freetogame.com/g/345/thumbnail.jpg",
-    status: "Live",
-    short_description:
-      "A free to play 2D browser-based online strategy game, become the leader and raise your city.",
-    description:
-      "Forge of Empires is a free to play 2D browser-based online strategy game that gives players the chance to make their unique city-state into an imperial powerhouse. Everyone has dreamt of building their own empire at some point or another, and Forge of Empires can bring that dream to life.\r\n\r\nPlayers will watch as their civilizations in Forge of Empires begin in the Stone Age and advance all the way into the Industrial Age. The campaign mode is single player and brings players a unique in-depth experience that allows them to use military action, skilled diplomacy, and cunning strategy to achieve their goals.\r\n\r\nMoreover, players in Forge of Empires choose where everything goes, setting up their civilization according to their whims and desires. Any buildings they want and where they want them are ultimately up to them.\r\n\r\nThe greatest feature of Forge of Empires is its wide availability. Players can access Forge of Empires from their Browsers, Apple iOS, Android App, and even on Facebook. It’s only fitting that a game that can create an empire reaches across a multitude of platforms.",
-    game_url: "https://www.freetogame.com/open/forge-of-empires",
-    genre: "Strategy",
-    platform: "Web Browser",
-    publisher: "InnoGames",
-    developer: "InnoGames",
-    release_date: "2012-04-17",
-    freetogame_profile_url: "https://www.freetogame.com/forge-of-empires",
-    screenshots: [
-      {
-        id: 909,
-        image: "https://www.freetogame.com/g/345/forge-of-empires-1.jpg",
-      },
-      {
-        id: 910,
-        image: "https://www.freetogame.com/g/345/forge-of-empires-2.jpg",
-      },
-      {
-        id: 911,
-        image: "https://www.freetogame.com/g/345/forge-of-empires-3.jpg",
-      },
-    ],
-  },
+  // {
+  //   id: 345,
+  //   title: "Forge of Empires",
+  //   thumbnail: "https://www.freetogame.com/g/345/thumbnail.jpg",
+  //   status: "Live",
+  //   short_description:
+  //     "A free to play 2D browser-based online strategy game, become the leader and raise your city.",
+  //   description:
+  //     "Forge of Empires is a free to play 2D browser-based online strategy game that gives players the chance to make their unique city-state into an imperial powerhouse. Everyone has dreamt of building their own empire at some point or another, and Forge of Empires can bring that dream to life.\r\n\r\nPlayers will watch as their civilizations in Forge of Empires begin in the Stone Age and advance all the way into the Industrial Age. The campaign mode is single player and brings players a unique in-depth experience that allows them to use military action, skilled diplomacy, and cunning strategy to achieve their goals.\r\n\r\nMoreover, players in Forge of Empires choose where everything goes, setting up their civilization according to their whims and desires. Any buildings they want and where they want them are ultimately up to them.\r\n\r\nThe greatest feature of Forge of Empires is its wide availability. Players can access Forge of Empires from their Browsers, Apple iOS, Android App, and even on Facebook. It’s only fitting that a game that can create an empire reaches across a multitude of platforms.",
+  //   game_url: "https://www.freetogame.com/open/forge-of-empires",
+  //   genre: "Strategy",
+  //   platform: "Web Browser",
+  //   publisher: "InnoGames",
+  //   developer: "InnoGames",
+  //   release_date: "2012-04-17",
+  //   freetogame_profile_url: "https://www.freetogame.com/forge-of-empires",
+  //   screenshots: [
+  //     {
+  //       id: 909,
+  //       image: "https://www.freetogame.com/g/345/forge-of-empires-1.jpg",
+  //     },
+  //     {
+  //       id: 910,
+  //       image: "https://www.freetogame.com/g/345/forge-of-empires-2.jpg",
+  //     },
+  //     {
+  //       id: 911,
+  //       image: "https://www.freetogame.com/g/345/forge-of-empires-3.jpg",
+  //     },
+  //   ],
+  // },
 ];
 export default Data;

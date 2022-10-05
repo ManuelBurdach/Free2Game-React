@@ -1,3 +1,63 @@
 .homeSection {
   margin: 100px;
 }
+
+/* ====================== GAME COMPONENT STYLING TOP 4 GAMES FOR PC GENERELL STYLING ========================== */
+
+.home-games-container {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  max-width: 1214px;
+}
+
+.home-game-cards-icon {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.home-game-info-wrapper {
+  padding: 70px 0 36px 36px;
+}
+
+.home-game-info-wrapper h3 {
+  margin-bottom: 24px;
+}
+
+/* ====================== TOP 4 GAMES FOR PC 1. ========================== */
+
+.home-games-container > div:first-of-type {
+  object-fit: cover;
+  grid-row: 1/-1;
+  min-width: 493px;
+}
+
+.home-games-container > div:first-of-type h3 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 36px;
+}
+
+.home-game-cards-icon > img,
+.home-game-cards-icon > img + p {
+  display: flex;
+  align-items: center;
+  padding: 11px 12px 10px;
+  height: 36px;
+  border: 1px solid var(--button-bg-color);
+  border-radius: 15px;
+}
+
+/* ====================== TOP 4 GAMES FOR PC 2., 3., 4. ========================== */
+
+.home-games-container > div:not(div:first-of-type) {
+  display: flex;
+  width: 697px;
+  height: 263px;
+}
+.home-games-container > div:not(div:first-of-type) > img:first-of-type {
+  width: 388px;
+  height: 100%;
+}

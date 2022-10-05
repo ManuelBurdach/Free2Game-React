@@ -12,7 +12,13 @@ const GameCards = (props) => {
   return (
     <div className="game-cards-wrapper">
       <img src={props.thumbnail} alt="Thumbnail-game" />
-      <div className="game-info-wrapper">
+      <div
+        className={
+          props.styling === "PC"
+            ? "home-game-info-wrapper"
+            : "game-info-wrapper"
+        }
+      >
         <h3>{props.title}</h3>
         {props.card != "allGames" ? (
           <p className="short_description">{props.short_description}</p>
@@ -21,7 +27,11 @@ const GameCards = (props) => {
         )}
 
         <MoreBtn value="READ MORE" />
-        <div className="game-cards-icon">
+        <div
+          className={
+            props.styling === "PC" ? "home-game-cards-icon" : "game-cards-icon"
+          }
+        >
           {props.platform.includes("Windows", "Web") ? (
             <>
               <img src={Windows} /> <img src={Web} />
