@@ -6,13 +6,13 @@
 .main-container {
   margin-bottom: 96px;
 }
-.container-left {
-  width: 491px;
+.article-left {
+  max-width: 491px;
   margin-right: 151px;
   margin-bottom: 50px;
 }
-.container-left img {
-  min-width: 491px;
+.article-left img {
+  max-width: 491px;
   min-height: 281px;
   left: 154px;
   border-radius: 24px;
@@ -20,7 +20,7 @@
   margin-right: 25px;
 }
 .detail-img {
-  width: 594px;
+  max-width: 594px;
   height: 356px;
   left: 154px;
   border-radius: 24px;
@@ -29,8 +29,8 @@
 .detail-img:last-of-type {
   margin-left: 25px;
 }
-.container-right {
-  width: 45%;
+.article-right {
+  max-width: 45%;
 }
 
 .small-container-left {
@@ -53,10 +53,10 @@
   max-width: 443px;
 }
 .small-container h3 {
-  width: 96px;
+  max-width: 96px;
 }
 
-.game-cards-icon-details > p {
+.game-cards-icon-details {
   display: flex;
   align-items: center;
   width: 90px;

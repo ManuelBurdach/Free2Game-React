@@ -15,21 +15,18 @@ const Detail = () => {
       {/* Header? */}
       <main>
         <h1>{props.title}</h1>
-        <div className="main-container">
-          <div className="container-left">
+        <section className="main-container">
+          <article className="article-left">
             <img src={props.thumbnail} alt=""></img>
-            <h2>Platform{props.platform}</h2>
-            <div className="game-cards-icon-details">
-              <p>{props.genre}</p>
-            </div>
-
+            <h2>Platform {props.platform}</h2>
+            <p className="game-cards-icon-details">{props.genre}</p>
             <MoreBtn value="PLAY NOW" />
-          </div>
-          <div className="container-right">
+          </article>
+          <article className="article-right">
             <h2>About</h2>
             <p>{props.description}</p>
-          </div>
-        </div>
+          </article>
+        </section>
         <img
           src={props.screenshots[0].image}
           alt=""
@@ -41,8 +38,8 @@ const Detail = () => {
           className="detail-img"
         ></img>
 
-        <div className="main-container">
-          <div className="container-left">
+        <section className="main-container">
+          <article className="article-left">
             <h2>Additional Information</h2>
             <p>{props.short_description}</p>
             <div className="small-container">
@@ -57,8 +54,8 @@ const Detail = () => {
               <h3>Release Date</h3>
               <p>{props.release_date}</p>
             </div>
-          </div>
-          <div className="container-right">
+          </article>
+          <article className="article-right">
             <h2>Minimum System Requirements {props.platform}</h2>
             <div className="small-container-both">
               <div className="small-container-left">
@@ -90,8 +87,8 @@ const Detail = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
       </main>
     </div>
   );
