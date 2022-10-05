@@ -7,17 +7,14 @@ const Home = () => {
     <>
       <section className="homeSection">
         <h2>Recently Added</h2>
-        <AllGames />
         <MoreBtn value="Show more" />
       </section>
       <section className="homeSection">
         <h2>Recently Added</h2>
-        <AllGames />
         <MoreBtn value="Show more" />
       </section>
       <section className="homeSection">
         <h2>Recently Added</h2>
-        <AllGames />
         <MoreBtn value="Show more" />
       </section>
     </>
