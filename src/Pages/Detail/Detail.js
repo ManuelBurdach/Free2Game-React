@@ -34,8 +34,6 @@ const Detail = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  console.log(props);
-
   return props != null ? (
     <div className="Detail">
       <main>
