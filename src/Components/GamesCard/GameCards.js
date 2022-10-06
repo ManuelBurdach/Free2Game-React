@@ -12,6 +12,7 @@ const GameCards = (props) => {
   return (
     <div className="game-cards-wrapper">
       <img src={props.thumbnail} alt="Thumbnail-game" />
+
       <div
         className={
           props.styling === "PC"

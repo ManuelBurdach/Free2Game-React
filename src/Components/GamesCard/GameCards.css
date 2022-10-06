@@ -131,7 +131,7 @@
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 995px) {
   .all-games-container {
     margin: 0 30px;
     grid-template-columns: repeat(2, 1fr);
@@ -141,17 +141,14 @@
   }
 }
 
-@media (max-width: 630px) {
-  .game-cards-wrapper {
-    max-width: 185px;
-  }
+@media (max-width: 670px) {
   .all-games-container {
+    grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
     align-items: center;
-    grid-template-columns: 1fr;
   }
   .search-value {
-    margin: 30px auto;
+    margin-left: 35%;
   }
 }

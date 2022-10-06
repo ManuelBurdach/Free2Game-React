@@ -29,11 +29,16 @@ const Home = () => {
       <section className="homeSection">
         <h2>Top 4 Games for PC in October 2022</h2>
         <div className="home-games-container">
+          {/* style={
+            key === "PC-Game0"
+              ? { backgroundImage: `url(${Data.thumbnail})` }
+              : ""
+          } */}
           {Data.map((Data, index) => (
             <GameCards
               card={"allGames"}
               styling={"PC"}
-              key={"Game" + index}
+              key={"PC-Game" + index}
               thumbnail={Data.thumbnail}
               title={Data.title}
               platform={Data.platform}
