@@ -1,5 +1,5 @@
 import "./Home.css";
-import AllGames from "../AllGames/AllGames";
+// import AllGames from "../AllGames/AllGames";
 import GameCards from "../../Components/GamesCard/GameCards";
 import MoreBtn from "../../Components/Btn/Read_showMore";
 
