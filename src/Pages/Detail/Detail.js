@@ -19,7 +19,9 @@ const Detail = () => {
           <article className="article-left">
             <img src={props.thumbnail} alt=""></img>
             <h2>Platform {props.platform}</h2>
-            <p className="game-cards-icon-details">{props.genre}</p>
+            <div>
+              <p className="game-cards-icon-details">{props.genre}</p>
+            </div>
             <MoreBtn value="PLAY NOW" />
           </article>
           <article className="article-right">
@@ -93,7 +95,5 @@ const Detail = () => {
     </div>
   );
 };
-
-// minimum_system_requirements
 
 export default Detail;
