@@ -33,7 +33,7 @@ const Detail = () => {
       .then((response) => setGameId(response))
       .catch((err) => console.error(err));
   }, []);
-
+  console.log("asd");
   return props != null ? (
     <div className="Detail">
       <main>
