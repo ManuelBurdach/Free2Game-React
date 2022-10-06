@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import MoreBtn from "../../Components/Btn/Read_showMore";
 
 // IMPORT DATA
-import Data from "../../Api/Data";
+// import Data from "../../Api/Data";
 
 // IMPORT CSS
 import "../Detail/Detail.css";
@@ -15,7 +15,7 @@ const Detail = () => {
   // let props = Data[params["*"]];
 
   const [props, setGameId] = useState(null);
-
+  //
   useEffect(() => {
     const options = {
       method: "GET",
@@ -25,7 +25,10 @@ const Detail = () => {
       },
     };
 
-    fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${params["*"]}`, options)
+    fetch(
+      `https://free-to-play-games-database.p.rapidapi.com/api/game?id=${params["*"]}`,
+      options
+    )
       .then((response) => response.json())
       .then((response) => setGameId(response))
       .catch((err) => console.error(err));
@@ -51,8 +54,16 @@ const Detail = () => {
             <p>{props.description}</p>
           </article>
         </section>
-        <img src={props.screenshots[0].image} alt="" className="detail-img"></img>
-        <img src={props.screenshots[1].image} alt="" className="detail-img"></img>
+        <img
+          src={props.screenshots[0].image}
+          alt=""
+          className="detail-img"
+        ></img>
+        <img
+          src={props.screenshots[1].image}
+          alt=""
+          className="detail-img"
+        ></img>
 
         <section className="main-container">
           <article className="article-left">
