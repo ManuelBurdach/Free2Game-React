@@ -4,18 +4,44 @@ import GameCards from "../../Components/GamesCard/GameCards";
 import SortBy from "../../Components/SortBy/SortBy";
 
 // IMPORT DATA
-import Data from "../../Api/Data";
+// import Data from "../../Api/Data";
 
 // IMPORT CSS
 import "../../Components/GamesCard/GameCards.css";
+import { useState, useEffect } from 'react';
+import axios from "axios";
+
+function useFetch(options){
+  const [data, setData] = useState([])
+
+useEffect(() => {
+  axios.request(options).then(function (response) {
+      setData(response.data);
+  })
+}, []);
+return {data}
+}
 
 const AllGames = () => {
+  const shooter = 'shooter'
+  const options = {
+    method: 'GET',
+    url: 'https://free-to-play-games-database.p.rapidapi.com/api/games',
+    params: {platform: 'browser', category: 'mmorpg', 'sort-by': 'alphabetical'},
+    headers: {
+      'X-RapidAPI-Key':process.env.REACT_APP_API_KEY,
+      'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
+    }
+  };
+  const { data } = useFetch(options)
+      console.log({data})
   return (
     <>
       {/* <SortBy /> */}
+      {}
       <p className="search-value">SHOOTER</p>
       <div className="all-games-container">
-        {Data.map((Data, index) => (
+        {data.map((Data, index) => (
           <GameCards
             card={"allGames"}
             key={"Game" + index}

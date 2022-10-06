@@ -7,12 +7,34 @@ import Data from "../../Api/Data";
 // IMPORT CSS
 import "../Detail/Detail.css";
 
+// IMPORT useState, useEffect
+import { useState, useEffect } from "react";
+
 const Detail = () => {
   let params = useParams();
-  let props = Data[params["*"]];
-  return (
+  // let props = Data[params["*"]];
+
+  const [props, setGameId] = useState(null);
+
+  useEffect(() => {
+    const options = {
+      method: "GET",
+      headers: {
+        "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
+        "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
+      },
+    };
+
+    fetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${params["*"]}`, options)
+      .then((response) => response.json())
+      .then((response) => setGameId(response))
+      .catch((err) => console.error(err));
+  }, []);
+
+  console.log(props);
+
+  return props != null ? (
     <div className="Detail">
-      {/* Header? */}
       <main>
         <h1>{props.title}</h1>
         <section className="main-container">
@@ -29,16 +51,8 @@ const Detail = () => {
             <p>{props.description}</p>
           </article>
         </section>
-        <img
-          src={props.screenshots[0].image}
-          alt=""
-          className="detail-img"
-        ></img>
-        <img
-          src={props.screenshots[1].image}
-          alt=""
-          className="detail-img"
-        ></img>
+        <img src={props.screenshots[0].image} alt="" className="detail-img"></img>
+        <img src={props.screenshots[1].image} alt="" className="detail-img"></img>
 
         <section className="main-container">
           <article className="article-left">
@@ -93,6 +107,8 @@ const Detail = () => {
         </section>
       </main>
     </div>
+  ) : (
+    <></>
   );
 };
 
