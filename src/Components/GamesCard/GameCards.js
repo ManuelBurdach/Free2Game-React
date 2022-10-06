@@ -20,7 +20,7 @@ const GameCards = (props) => {
         }
       >
         <h3>{props.title}</h3>
-        {props.card != "allGames" ? (
+        {props.card !== "allGames" ? (
           <p className="short_description">{props.short_description}</p>
         ) : (
           <></>
@@ -34,12 +34,12 @@ const GameCards = (props) => {
         >
           {props.platform.includes("Windows", "Web") ? (
             <>
-              <img src={Windows} /> <img src={Web} />
+              <img src={Windows} alt="" /> <img src={Web} alt="" />
             </>
           ) : props.platform.includes("Web") ? (
-            <img src={Web} />
+            <img src={Web} alt="" />
           ) : (
-            <img src={Windows} />
+            <img src={Windows} alt="" />
           )}
 
           <p>{props.genre}</p>
