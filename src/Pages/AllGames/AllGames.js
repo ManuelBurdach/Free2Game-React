@@ -18,18 +18,17 @@ function useFetch(options) {
     axios.request(options).then(function (response) {
       setData(response.data);
     });
-  }, []);
+  }, [options.params]);
   return { data };
 }
 
 const AllGames = () => {
-  const shooter = "shooter";
+  const [sortBy, setSortBy] = useState("all");
+
   const options = {
     method: "GET",
     url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
     params: {
-      platform: "browser",
-      category: "mmorpg",
       "sort-by": "alphabetical",
     },
     headers: {
@@ -37,13 +36,22 @@ const AllGames = () => {
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
     },
   };
+
+  if (sortBy === "all") {
+    delete options.params.platform;
+  } else {
+    options.params.platform = "browser";
+  }
+
   const { data } = useFetch(options);
   console.log({ data });
   return (
     <>
       {/* <SortBy /> */}
       {}
-      <p className="search-value">SHOOTER</p>
+      <p className="search-value" onClick={() => setSortBy("browser")}>
+        {options.params.platform}
+      </p>
       <div className="all-games-container">
         {data.map((Data, index) => (
           <GameCards
@@ -59,7 +67,10 @@ const AllGames = () => {
       </div>
     </>
   );
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1508f5095f2543354cf2c73e8791d1bf3a70ba53
   // TODO if any checkbox is clicked -> display searched value, if not show not
 };
 
