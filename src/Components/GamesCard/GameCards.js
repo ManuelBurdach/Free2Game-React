@@ -9,7 +9,7 @@ import Windows from "../../Assets/Icons/Windows.svg";
 import Web from "../../Assets/Icons/Web.svg";
 
 const GameCards = (props) => {
-  // && data.index === 0
+  // TODO greift nicht auf number, daher füllt der nicht den DIV
   if (props.styling === "PC" && props.number === 0) {
     return (
       //
