@@ -84,7 +84,7 @@ const Home = () => {
               title={Data.title}
               platform={Data.platform}
               genre={Data.genre}
-              number={"1"}
+              // number={data.indexOf()}
             />
           ))}
         </div>
