@@ -45,12 +45,13 @@ const AllGames = () => {
   }
 
   const { data } = useFetch(options);
+  console.log(data);
   return (
     <>
       <form className="sortBy">
         <label htmlFor="sortBy">Platform</label>
         <label htmlFor="">
-          <input type="checkbox" name="sortBy" id="" />
+          <input type="checkbox" name="sortBy" id="" onClick={() => setSortBy("pc")} />
           "bla"
         </label>
       </form>

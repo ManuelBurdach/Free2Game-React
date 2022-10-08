@@ -21,18 +21,8 @@ const GameCards = (props) => {
           backgroundSize: "cover",
         }}
       >
-        {props.styling === "PC" ? (
-          <p className="top-number-pc">{props.number + 1}</p>
-        ) : (
-          <></>
-        )}
-        <div
-          className={
-            props.styling === "PC"
-              ? "home-game-info-wrapper"
-              : "game-info-wrapper"
-          }
-        >
+        {props.styling === "PC" ? <p className="top-number-pc">{props.number + 1}</p> : <></>}
+        <div className={props.styling === "PC" ? "home-game-info-wrapper" : "game-info-wrapper"}>
           <h3>{props.title}</h3>
           {props.card !== "allGames" ? (
             <p className="short_description">{props.short_description}</p>
@@ -41,14 +31,8 @@ const GameCards = (props) => {
           )}
 
           <MoreBtn value="READ MORE" />
-          <div
-            className={
-              props.styling === "PC"
-                ? "home-game-cards-icon"
-                : "game-cards-icon"
-            }
-          >
-            {props.platform.includes("Windows", "Web") ? (
+          <div className={props.styling === "PC" ? "home-game-cards-icon" : "game-cards-icon"}>
+            {props.platform.includes("Windows") && props.platform.includes("Web") ? (
               <>
                 <img src={Windows} alt="" /> <img src={Web} alt="" />
               </>
@@ -67,19 +51,9 @@ const GameCards = (props) => {
     return (
       <div className="game-cards-wrapper">
         <img src={props.thumbnail} alt="Thumbnail-game" />
-        {props.styling === "PC" ? (
-          <p className="top-number-pc">{props.number + 1}</p>
-        ) : (
-          <></>
-        )}
+        {props.styling === "PC" ? <p className="top-number-pc">{props.number + 1}</p> : <></>}
 
-        <div
-          className={
-            props.styling === "PC"
-              ? "home-game-info-wrapper"
-              : "game-info-wrapper"
-          }
-        >
+        <div className={props.styling === "PC" ? "home-game-info-wrapper" : "game-info-wrapper"}>
           <h3>{props.title}</h3>
           {props.card !== "allGames" ? (
             <p className="short_description">{props.short_description}</p>
@@ -88,16 +62,11 @@ const GameCards = (props) => {
           )}
 
           <MoreBtn value="READ MORE" />
-          <div
-            className={
-              props.styling === "PC"
-                ? "home-game-cards-icon"
-                : "game-cards-icon"
-            }
-          >
-            {props.platform.includes("Windows", "Web") ? (
+          <div className={props.styling === "PC" ? "home-game-cards-icon" : "game-cards-icon"}>
+            {props.platform.includes("Windows") && props.platform.includes("Web") ? (
               <>
-                <img src={Windows} alt="" /> <img src={Web} alt="" />
+                <img src={Windows} alt="" />
+                <img src={Web} alt="" />
               </>
             ) : props.platform.includes("Web") ? (
               <img src={Web} alt="" />
