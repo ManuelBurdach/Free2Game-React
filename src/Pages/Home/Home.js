@@ -65,13 +65,12 @@ const Home = () => {
       <section className="homeSection">
         <h2>Top 4 Games for PC in October 2022</h2>
         <div className="home-games-container">
-          {(shorty = "popularity")}
           {/* style={
             key === "PC-Game0"
               ? { backgroundImage: `url(${Data.thumbnail})` }
               : ""
           } */}
-          {data.slice(0, 4).map((Data, index) => (
+          {data.slice(5, 9).map((Data, index) => (
             <GameCards
               card={"allGames"}
               styling={"PC"}
@@ -80,7 +79,7 @@ const Home = () => {
               title={Data.title}
               platform={Data.platform}
               genre={Data.genre}
-              // number={data.indexOf()}
+              number={index}
             />
           ))}
         </div>
@@ -89,7 +88,7 @@ const Home = () => {
       <section className="homeSection">
         <h2>Top 4 Games for Browser in October 2022</h2>
         <div className="all-games-container">
-          {data.slice(0, 4).map((Data, index) => (
+          {data.slice(10, 14).map((Data, index) => (
             <GameCards
               card={"allGames"}
               key={"Game" + index}

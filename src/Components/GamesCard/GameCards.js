@@ -10,13 +10,14 @@ import Web from "../../Assets/Icons/Web.svg";
 
 const GameCards = (props) => {
   // TODO greift nicht auf number, daher füllt der nicht den DIV
+
   if (props.styling === "PC" && props.number === 0) {
     return (
-      //
       <div
         className="game-cards-wrapper"
         style={{
-          backgroundImage: `url(${props.screenshots[0].image})`,
+          // screenshots[0].image
+          backgroundImage: `url(${props.thumbnail})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
         }}
