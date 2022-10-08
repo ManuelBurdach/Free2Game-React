@@ -18,7 +18,7 @@ function useFetch(options) {
     axios.request(options).then(function (response) {
       setData(response.data);
     });
-  }, [options.params]);
+  }, []);
   return { data };
 }
 
@@ -40,15 +40,20 @@ const AllGames = () => {
   if (sortBy === "all") {
     delete options.params.platform;
   } else {
-    options.params.platform = "browser";
+    options.params.platform = sortBy;
   }
 
   const { data } = useFetch(options);
   console.log({ data });
   return (
     <>
-      {/* <SortBy /> */}
-      {}
+      <form className="sortBy">
+        <label htmlFor="sortBy">Platform</label>
+        <label htmlFor="">
+          <input type="checkbox" name="sortBy" id="" />
+          "bla"
+        </label>
+      </form>
       <p className="search-value" onClick={() => setSortBy("browser")}>
         {options.params.platform}
       </p>
