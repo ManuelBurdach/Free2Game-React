@@ -33,7 +33,6 @@ const AllGames = () => {
       "sort-by": "alphabetical",
     },
     headers: {
-      // process.env.REACT_APP_API_KEY
       "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
     },

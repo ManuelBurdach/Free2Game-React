@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import MoreBtn from "../../Components/Btn/Read_showMore";
 
 // IMPORT DATA
-import Data from "../../Api/Data";
+// import Data from "../../Api/Data";
 
 // IMPORT CSS
 import "../Detail/Detail.css";
@@ -15,7 +15,7 @@ const Detail = () => {
   // let props = Data[params["*"]];
 
   const [props, setGameId] = useState(null);
-
+  //
   useEffect(() => {
     const options = {
       method: "GET",
@@ -34,9 +34,7 @@ const Detail = () => {
       .then((response) => setGameId(response))
       .catch((err) => console.error(err));
   }, []);
-
-  console.log(props);
-
+  console.log("asd");
   return props != null ? (
     <div className="Detail">
       <main>
