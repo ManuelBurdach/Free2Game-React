@@ -19,6 +19,7 @@ const Detail = () => {
   useEffect(() => {
     const options = {
       method: "GET",
+      // process.env.REACT_APP_API_KEY
       headers: {
         "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
         "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",

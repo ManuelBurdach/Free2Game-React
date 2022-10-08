@@ -1,4 +1,4 @@
-import { useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import Rect15 from "../../Assets/Img/Rect15.png";
 import Rect16 from "../../Assets/Img/Rect16.png";
@@ -7,18 +7,12 @@ import lol2 from "../../Assets/Img/lol2.png";
 import lol3 from "../../Assets/Img/lol3.png";
 import lol4 from "../../Assets/Img/lol4.png";
 import Search from "../../Assets/Img/search.ico";
-import Data from "../../Api/Data";
 
 import "./Header.css";
 
 const Header = () => {
-  // const headImg = Data[0].screenshots.image;
-  let randomImg = Math.floor(Math.random() * Data.length);
-  let randomImg2 = Math.floor(Math.random() * 3);
-  // let params = useParams();
   const location = useLocation();
 
-  console.log("pathname", location);
   return (
     <header>
       <div className="topBar">
@@ -37,8 +31,20 @@ const Header = () => {
           <img src={Search} alt="" />
         </div>
       </div>
-      <section className="heroSection">
-      {location.pathname === "/AllGames" ? <img src={lol} alt="" /> :location.pathname === "/RecentlyAdded" ? <img src={lol2} alt="" /> :location.pathname === "/Detail//*" ? <img src={lol3} alt="" /> : <img src={lol4} alt="" />}      </section>
+      <section
+        className="heroSection"
+        style={{
+          backgroundImage: `url("${
+            location.pathname === "/AllGames"
+              ? lol
+              : location.pathname === "/RecentlyAdded"
+              ? lol2
+              : location.pathname === "/Detail//*"
+              ? lol3
+              : lol4
+          }")`,
+        }}
+      ></section>
     </header>
   );
 };
