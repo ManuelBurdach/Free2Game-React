@@ -1,12 +1,13 @@
 /* ================================ Game Card Component (All Game Page) ================================ */
 
 .all-games-container {
-  display: grid;
-  /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-  max-width: 1212px;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); */
+  /* max-width: 1212px; */
   gap: 24px;
   margin: 48px 0 0 80px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .game-cards-wrapper {
@@ -92,6 +93,7 @@
 /* ================================ TOP 4 GAME Numbers ================================ */
 
 .top-number-pc {
+  margin-top: 24px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -106,15 +108,13 @@
 }
 
 .top-number-pc:first-child {
-  /* position: relative; */
-  /* right: 90px; */
-  margin-top: 24px;
+  /* border-color: green; */
+  margin-left: 85%;
 }
 
 .top-number-pc:not(.top-number-pc:first-child) {
   position: relative;
-  right: 360px;
-  top: 24px;
+  right: 52%;
 }
 
 /* ================================ Game Card Component (Home Page -> Top 4 Games for PC) ================================ */
@@ -133,3 +133,8 @@
 /* ================================ Game Card Component (Home Page -> Top 4 Games for Browser) ================================ */
 
 /* ============================ RESPONSIVE ============================ */
+
+/* .all-games-container {
+ 
+  justify-content: center;
+} */
