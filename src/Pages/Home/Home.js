@@ -17,15 +17,11 @@ import axios from "axios";
 function useFetch(options) {
   const [data, setData] = useState([]);
 
-  useEffect(
-    () => {
-      axios.request(options).then(function (response) {
-        setData(response.data);
-      });
-    },
-    [],
-    options
-  );
+  useEffect(() => {
+    axios.request(options).then(function (response) {
+      setData(response.data);
+    });
+  }, []);
   return { data };
 }
 
@@ -37,7 +33,7 @@ const Home = () => {
   const options = {
     method: "GET",
     url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
-    params: { platform: platty, category: "mmorpg", "sort-by": shorty },
+    params: { platform: platty, "sort-by": shorty },
     headers: {
       "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
@@ -46,7 +42,7 @@ const Home = () => {
 
   //dann rufen wir useFetch auch und übergeben die op
   const { data } = useFetch(options);
-  console.log({ data });
+  console.log(data);
   return (
     <>
       <section className="homeSection">
