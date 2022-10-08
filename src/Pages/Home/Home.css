@@ -9,7 +9,7 @@
   gap: 24px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  min-width: 1214px;
+  /* min-width: 1214px; */
 }
 
 .home-game-cards-icon {
@@ -31,7 +31,6 @@
 .home-games-container > div:first-of-type {
   object-fit: cover;
   grid-row: 1/-1;
-  min-width: 493px;
 }
 
 .home-games-container > div:first-of-type h3 {
@@ -67,7 +66,7 @@
 @media (max-width: 1350px) {
   .home-games-container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
   }
 
   .all-games-container {

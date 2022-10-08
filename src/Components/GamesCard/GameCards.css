@@ -89,6 +89,34 @@
   line-height: 24px;
 }
 
+/* ================================ TOP 4 GAME Numbers ================================ */
+
+.top-number-pc {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: var(--cards-bg-color);
+  border: 2px solid var(--button-bg-color);
+}
+
+.top-number-pc:first-child {
+  /* position: relative; */
+  /* right: 90px; */
+  margin-top: 24px;
+}
+
+.top-number-pc:not(.top-number-pc:first-child) {
+  position: relative;
+  right: 360px;
+  top: 24px;
+}
+
 /* ================================ Game Card Component (Home Page -> Top 4 Games for PC) ================================ */
 
 .all-games-container-pc {
@@ -105,50 +133,3 @@
 /* ================================ Game Card Component (Home Page -> Top 4 Games for Browser) ================================ */
 
 /* ============================ RESPONSIVE ============================ */
-/* 
-@media (max-width: 1400px) {
-  .game-cards-wrapper {
-    min-width: auto;
-  }
-
-  .all-games-container {
-    margin: 48px 30px 0 80px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .game-cards-wrapper {
-    min-width: 285px;
-  }
-
-  .all-games-container {
-    margin: 0 30px;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .search-value {
-    margin: 30px 0 30px 30px;
-  }
-}
-
-@media (max-width: 995px) {
-  .all-games-container {
-    margin: 0 30px;
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .search-value {
-    margin: 30px 0 30px 30px;
-  }
-}
-
-@media (max-width: 670px) {
-  .all-games-container {
-    grid-template-columns: 1fr;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .search-value {
-    margin-left: 35%;
-  }
-} */
