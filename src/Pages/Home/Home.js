@@ -39,7 +39,6 @@ const Home = () => {
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
     },
   };
-
   //dann rufen wir useFetch auch und übergeben die op
   const { data } = useFetch(options);
   console.log({ data });

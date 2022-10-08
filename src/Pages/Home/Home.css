@@ -36,6 +36,7 @@
 .home-games-container > div:first-of-type h3 {
   font-weight: 700;
   font-size: 48px;
+  margin-top: 450px;
   margin-bottom: 36px;
 }
 
@@ -46,6 +47,7 @@
   padding: 11px 12px 10px;
   height: 36px;
   border: 1px solid var(--button-bg-color);
+  background: var(--cards-bg-color);
   border-radius: 15px;
 }
 
