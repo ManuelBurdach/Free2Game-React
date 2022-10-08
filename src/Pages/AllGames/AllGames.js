@@ -27,7 +27,11 @@ const AllGames = () => {
   const options = {
     method: "GET",
     url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
-    params: { platform: "browser", category: "mmorpg", "sort-by": "alphabetical" },
+    params: {
+      platform: "browser",
+      category: "mmorpg",
+      "sort-by": "alphabetical",
+    },
     headers: {
       "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
