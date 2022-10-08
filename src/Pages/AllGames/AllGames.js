@@ -72,6 +72,7 @@ const AllGames = () => {
       </div>
     </>
   );
+
   // TODO if any checkbox is clicked -> display searched value, if not show not
 };
 
