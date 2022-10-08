@@ -21,7 +21,7 @@ function useFetch(options) {
     axios.request(options).then(function (response) {
       setData(response.data);
     });
-  }, []);
+  }, [], options);
   return { data };
 }
 
@@ -47,19 +47,17 @@ const Home = () => {
       <section className="homeSection">
         <h2>Recently Added</h2>
         <div className="all-games-container">
-          {data
-            .filter((Data, index) => index < 4)
-            .map((Data, index) => (
-              <GameCards
-                card={"HomeGames"}
-                key={"Game" + index}
-                thumbnail={Data.thumbnail}
-                title={Data.title}
-                short_description={Data.short_description}
-                platform={Data.platform}
-                genre={Data.genre}
-              />
-            ))}
+          {data.slice(0, 4).map((Data, index) => (
+            <GameCards
+              card={"HomeGames"}
+              key={"Game1" + index}
+              thumbnail={Data.thumbnail}
+              title={Data.title}
+              short_description={Data.short_description}
+              platform={Data.platform}
+              genre={Data.genre}
+            />
+          ))}
         </div>
         <MoreBtn value="Show more" />
       </section>
@@ -72,38 +70,35 @@ const Home = () => {
               ? { backgroundImage: `url(${Data.thumbnail})` }
               : ""
           } */}
-          {data
-            .filter((Data, index) => index < 4)
-            .map((Data, index) => (
-              <GameCards
-                card={"allGames"}
-                styling={"PC"}
-                key={"PC-Game" + index}
-                thumbnail={Data.thumbnail}
-                title={Data.title}
-                platform={Data.platform}
-                genre={Data.genre}
-              />
-            ))}
+          {data.slice(0, 4).map((Data, index) => (
+            <GameCards
+              card={"allGames"}
+              styling={"PC"}
+              key={"PC-Game" + index}
+              thumbnail={Data.thumbnail}
+              title={Data.title}
+              platform={Data.platform}
+              genre={Data.genre}
+              number={"1"}
+            />
+          ))}
         </div>
         <MoreBtn value="Show more" />
       </section>
       <section className="homeSection">
         <h2>Top 4 Games for Browser in October 2022</h2>
         <div className="all-games-container">
-          {data
-            .filter((Data, index) => index < 4)
-            .map((Data, index) => (
-              <GameCards
-                card={"allGames"}
-                key={"Game" + index}
-                thumbnail={Data.thumbnail}
-                title={Data.title}
-                short_description={Data.short_description}
-                platform={Data.platform}
-                genre={Data.genre}
-              />
-            ))}
+          {data.slice(0, 4).map((Data, index) => (
+            <GameCards
+              card={"allGames"}
+              key={"Game" + index}
+              thumbnail={Data.thumbnail}
+              title={Data.title}
+              short_description={Data.short_description}
+              platform={Data.platform}
+              genre={Data.genre}
+            />
+          ))}
         </div>
         <MoreBtn value="Show more" />
       </section>
