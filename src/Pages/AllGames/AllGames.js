@@ -18,7 +18,7 @@ function useFetch(options) {
     axios.request(options).then(function (response) {
       setData(response.data);
     });
-  }, []);
+  }, [options.params.platform]);
   return { data };
 }
 
@@ -29,6 +29,7 @@ const AllGames = () => {
     method: "GET",
     url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
     params: {
+      platform: "",
       "sort-by": "alphabetical",
     },
     headers: {
@@ -44,7 +45,6 @@ const AllGames = () => {
   }
 
   const { data } = useFetch(options);
-  console.log({ data });
   return (
     <>
       <form className="sortBy">
