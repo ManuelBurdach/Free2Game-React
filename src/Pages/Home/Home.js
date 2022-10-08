@@ -17,11 +17,15 @@ import axios from "axios";
 function useFetch(options) {
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    axios.request(options).then(function (response) {
-      setData(response.data);
-    });
-  }, [], options);
+  useEffect(
+    () => {
+      axios.request(options).then(function (response) {
+        setData(response.data);
+      });
+    },
+    [],
+    options
+  );
   return { data };
 }
 
@@ -79,7 +83,7 @@ const Home = () => {
               title={Data.title}
               platform={Data.platform}
               genre={Data.genre}
-              number={"1"}
+              // number={data.indexOf()}
             />
           ))}
         </div>
