@@ -31,8 +31,13 @@ const Header = () => {
           <img src={Search} alt="" />
         </div>
       </div>
-      <section className="heroSection">
-        {location.pathname === "/AllGames" ? (
+      <section
+        className="heroSection"
+        style={{
+          backgroundImage: `url("${lol4}")`,
+        }}
+      >
+        {/* {location.pathname === "/AllGames" ? (
           <img src={lol} alt="" />
         ) : location.pathname === "/RecentlyAdded" ? (
           <img src={lol2} alt="" />
@@ -40,7 +45,7 @@ const Header = () => {
           <img src={lol3} alt="" />
         ) : (
           <img src={lol4} alt="" />
-        )}{" "}
+        )}{" "} */}
       </section>
     </header>
   );
