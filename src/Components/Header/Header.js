@@ -34,19 +34,17 @@ const Header = () => {
       <section
         className="heroSection"
         style={{
-          backgroundImage: `url("${lol4}")`,
+          backgroundImage: `url("${
+            location.pathname === "/AllGames"
+              ? lol
+              : location.pathname === "/RecentlyAdded"
+              ? lol2
+              : location.pathname === "/Detail//*"
+              ? lol3
+              : lol4
+          }")`,
         }}
-      >
-        {/* {location.pathname === "/AllGames" ? (
-          <img src={lol} alt="" />
-        ) : location.pathname === "/RecentlyAdded" ? (
-          <img src={lol2} alt="" />
-        ) : location.pathname === "/Detail//*" ? (
-          <img src={lol3} alt="" />
-        ) : (
-          <img src={lol4} alt="" />
-        )}{" "} */}
-      </section>
+      ></section>
     </header>
   );
 };
