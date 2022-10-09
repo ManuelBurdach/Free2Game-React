@@ -30,9 +30,8 @@
   margin-left: 25px;
 }
 .article-right {
-  max-width: 45%;
+  max-width: 491px;
 }
-
 .small-container-left {
   margin-right: 3rem;
 }
@@ -50,20 +49,94 @@
 }
 .Detail p {
   margin-bottom: 24px;
-  max-width: 443px;
+  max-width: 450px;
 }
 .small-container h3 {
   max-width: 96px;
 }
 
 .game-cards-icon-details {
-  /* display: flex;
-  align-items: center; */
   display: inline-block;
-  /* width: 90px; */
   padding: 6px 12px;
-  /* height: 36px; */
   border: 1px solid var(--button-bg-color);
   border-radius: 15px;
   background-color: var(--cards-bg-color);
+}
+
+/* ============= Media Queries ================ */
+@media (max-width: 600px) {
+  .main-container {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .article-left {
+    display: block;
+    width: 100%;
+  }
+  .article-right {
+    display: block;
+    width: 100%;
+  }
+
+  .Detail img {
+    width: 120%;
+    min-width: 30%;
+    height: 30%;
+    margin-bottom: 0px;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .detail-img:last-of-type {
+    margin-left: 0px;
+  }
+  .Detail p {
+    margin-bottom: 24px;
+    /* max-width: 100%; */
+  }
+  .about-p {
+    width: 120%;
+  }
+  .small-container-left {
+    margin-right: 6rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .main-container {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .article-left {
+    display: block;
+    width: 100%;
+  }
+  .article-right {
+    display: block;
+    width: 100%;
+  }
+
+  .Detail img {
+    max-width: 80%;
+    min-width: 40%;
+    height: 30%;
+    margin-bottom: 0px;
+    display: block;
+    margin-bottom: 12px;
+  }
+  .detail-img:last-of-type {
+    margin-left: 0px;
+  }
+  .Detail p {
+    margin-bottom: 24px;
+    /* max-width: 100%; */
+  }
+  .about-p {
+    width: 120%;
+  }
+  .small-container-left {
+    margin-right: 6rem;
+  }
 }

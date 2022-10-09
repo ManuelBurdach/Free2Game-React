@@ -50,7 +50,7 @@ const Detail = () => {
           </article>
           <article className="article-right">
             <h2>About</h2>
-            <p>{props.description}</p>
+            <p className="about-p">{props.description}</p>
           </article>
         </section>
         <img
