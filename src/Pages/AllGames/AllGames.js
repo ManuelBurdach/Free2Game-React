@@ -51,7 +51,12 @@ const AllGames = () => {
       <form className="sortBy">
         <label htmlFor="sortBy">Platform</label>
         <label htmlFor="">
-          <input type="checkbox" name="sortBy" id="" onClick={() => setSortBy("pc")} />
+          <input
+            type="checkbox"
+            name="sortBy"
+            id=""
+            onClick={() => setSortBy("pc")}
+          />
           "bla"
         </label>
       </form>
