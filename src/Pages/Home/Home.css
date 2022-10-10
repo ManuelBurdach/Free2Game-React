@@ -22,6 +22,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   margin-left: 80px;
+  margin-top: 30px;
+
   max-width: 1214px;
 }
 
@@ -51,6 +53,7 @@
   font-size: 48px;
   margin-top: 450px;
   margin-bottom: 36px;
+  color: var(--cards-bg-color);
 }
 
 .home-game-cards-icon > img,
@@ -78,7 +81,7 @@
 
 /* ============================ RESPONSIVE ============================ */
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .home-games-container,
   .all-games-container,
   .homeSection h2 {
@@ -96,6 +99,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
   }
+
   .home-games-container > div:not(div:first-of-type) {
     display: flex;
 
@@ -110,7 +114,8 @@
 
   .top-number-pc:not(.top-number-pc:first-child) {
     position: static;
-    border-radius: 50%;
-    /* right: 52%; */
+    border-radius: 100%;
+    margin-left: 30px;
+    padding: 12px;
   }
 }
