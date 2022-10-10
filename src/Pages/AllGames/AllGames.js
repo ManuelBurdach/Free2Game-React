@@ -21,7 +21,7 @@ function useFetch(options) {
   return { data };
 }
 
-const RecentlyAdded = () => {
+const AllGames = () => {
   const [sortBy, setSortBy] = useState("all");
 
   const options = {
@@ -29,7 +29,7 @@ const RecentlyAdded = () => {
     url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
     params: {
       platform: "",
-      "sort-by": "release date",
+      "sort-by": "alphabetical",
     },
     headers: {
       "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
@@ -48,8 +48,100 @@ const RecentlyAdded = () => {
 
   return (
     <>
+      <section className="dropdown">
+        <form className="sortBy">
+          <p
+            onClick={() => {
+              document
+                .querySelector(`.sortBy:nth-of-type(1) div`)
+                .classList.toggle("activ");
+            }}
+          >
+            Platform <span>V</span>
+          </p>
+          <div>
+            <button
+              type="button"
+              onClick={() => {
+                setSortBy("all");
+              }}
+            >
+              <div></div>All Platforms
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSortBy("pc");
+              }}
+            >
+              <div></div>Windows (Pc)
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSortBy("browser");
+              }}
+            >
+              <div></div>Browser (Web)
+            </button>
+          </div>
+        </form>
+        <form className="sortBy">
+          <p
+            onClick={() => {
+              document
+                .querySelector(`.sortBy:nth-of-type(2) div`)
+                .classList.toggle("activ");
+            }}
+          >
+            Genre/Tag<span>V</span>
+          </p>
+          <div>
+            <button type="button">
+              <div></div>Mmorpg
+            </button>
+            <button type="button">
+              <div></div>Shooter
+            </button>
+            <button type="button">
+              <div></div>Strategy
+            </button>
+            <button type="button">
+              <div></div>Moba
+            </button>
+          </div>
+        </form>
+        <form className="sortBy">
+          <p
+            onClick={() => {
+              document
+                .querySelector(`.sortBy:nth-of-type(3) div`)
+                .classList.toggle("activ");
+            }}
+          >
+            Sort by<span>V</span>
+          </p>
+          <div>
+            <button type="button">
+              <div></div>Relevance
+            </button>
+            <button type="button">
+              <div></div>Popularity
+            </button>
+            <button type="button">
+              <div></div>Release Date
+            </button>
+            <button type="button">
+              <div></div>Alphabetical
+            </button>
+          </div>
+        </form>
+      </section>
+      <div className="sortByContainer">
+        <p className="search-value">{options.params.platform}</p>
+      </div>
       <div className="all-games-container">
-        {data.slice(0, 20).map((Data, index) => (
+        {data.map((Data, index) => (
           <GameCards
             card={"allGames"}
             key={"Game" + index}
@@ -58,7 +150,6 @@ const RecentlyAdded = () => {
             short_description={Data.short_description}
             platform={Data.platform}
             genre={Data.genre}
-            id={Data.id}
           />
         ))}
       </div>
@@ -66,4 +157,5 @@ const RecentlyAdded = () => {
   );
   // TODO if any checkbox is clicked -> display searched value, if not show not
 };
-export default RecentlyAdded;
+
+export default AllGames;
