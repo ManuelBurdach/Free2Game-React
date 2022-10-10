@@ -58,6 +58,7 @@ const RecentlyAdded = () => {
             short_description={Data.short_description}
             platform={Data.platform}
             genre={Data.genre}
+            id={Data.id}
           />
         ))}
       </div>
