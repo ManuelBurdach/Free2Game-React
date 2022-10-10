@@ -20,7 +20,7 @@ const GameCards = (props) => {
           backgroundImage: `url(${props.thumbnail})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroundPosition: "50%,50%",
+          backgroundPosition: "center",
         }}
       >
         {props.styling === "PC" ? (
