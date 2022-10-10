@@ -21,7 +21,7 @@ function useFetch(options) {
   return { data };
 }
 
-const AllGames = () => {
+const RecentlyAdded = () => {
   const [sortBy, setSortBy] = useState("all");
 
   const options = {
@@ -29,7 +29,7 @@ const AllGames = () => {
     url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
     params: {
       platform: "",
-      "sort-by": "alphabetical",
+      "sort-by": "release date",
     },
     headers: {
       "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
@@ -48,23 +48,8 @@ const AllGames = () => {
 
   return (
     <>
-      <form className="sortBy">
-        <label htmlFor="sortBy">Platform</label>
-        <label htmlFor="">
-          <input
-            type="checkbox"
-            name="sortBy"
-            id=""
-            onClick={() => setSortBy("pc")}
-          />
-          "bla"
-        </label>
-      </form>
-      <p className="search-value" onClick={() => setSortBy("browser")}>
-        {options.params.platform}
-      </p>
       <div className="all-games-container">
-        {data.map((Data, index) => (
+        {data.slice(0, 20).map((Data, index) => (
           <GameCards
             card={"allGames"}
             key={"Game" + index}
@@ -80,5 +65,4 @@ const AllGames = () => {
   );
   // TODO if any checkbox is clicked -> display searched value, if not show not
 };
-
-export default AllGames;
+export default RecentlyAdded;
