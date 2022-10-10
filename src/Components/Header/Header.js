@@ -23,7 +23,8 @@ const Header = () => {
           </div>
 
           <h1>FREE2GAME</h1>
-          <h2>{""}</h2>
+         
+          
         </div>
         <div className="searchBar">
           <input type="text" id="header-search" name="s" />
@@ -44,7 +45,13 @@ const Header = () => {
               : lol4
           }")`,
         }}
-      ></section>
+      > {  location.pathname === "/AllGames"
+              ? (<h2>All GAMES</h2>)
+              : location.pathname === "/RecentlyAdded"
+              ? (<h2>RECENTLY ADDED</h2>)
+              : location.pathname === "/Detail//*"
+              ? <h2></h2>
+              : (<h2>FIND & TRACK THE <br /> BEST FREE-TO-PLAY <br /> GAMES!</h2>)}</section>
     </header>
   );
 };
