@@ -48,98 +48,21 @@ const AllGames = () => {
 
   return (
     <>
-      <section className="dropdown">
-        <form className="sortBy">
-          <p
-            onClick={() => {
-              document
-                .querySelector(`.sortBy:nth-of-type(1) div`)
-                .classList.toggle("activ");
-            }}
-          >
-            Platform <span>V</span>
-          </p>
-          <div>
-            <button
-              type="button"
-              onClick={() => {
-                setSortBy("all");
-              }}
-            >
-              <div></div>All Platforms
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSortBy("pc");
-              }}
-            >
-              <div></div>Windows (Pc)
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setSortBy("browser");
-              }}
-            >
-              <div></div>Browser (Web)
-            </button>
-          </div>
-        </form>
-        <form className="sortBy">
-          <p
-            onClick={() => {
-              document
-                .querySelector(`.sortBy:nth-of-type(2) div`)
-                .classList.toggle("activ");
-            }}
-          >
-            Genre/Tag<span>V</span>
-          </p>
-          <div>
-            <button type="button">
-              <div></div>Mmorpg
-            </button>
-            <button type="button">
-              <div></div>Shooter
-            </button>
-            <button type="button">
-              <div></div>Strategy
-            </button>
-            <button type="button">
-              <div></div>Moba
-            </button>
-          </div>
-        </form>
-        <form className="sortBy">
-          <p
-            onClick={() => {
-              document
-                .querySelector(`.sortBy:nth-of-type(3) div`)
-                .classList.toggle("activ");
-            }}
-          >
-            Sort by<span>V</span>
-          </p>
-          <div>
-            <button type="button">
-              <div></div>Relevance
-            </button>
-            <button type="button">
-              <div></div>Popularity
-            </button>
-            <button type="button">
-              <div></div>Release Date
-            </button>
-            <button type="button">
-              <div></div>Alphabetical
-            </button>
-          </div>
-        </form>
-      </section>
-      <div className="sortByContainer">
-        <p className="search-value">{options.params.platform}</p>
-      </div>
+      <form className="sortBy">
+        <label htmlFor="sortBy">Platform</label>
+        <label htmlFor="">
+          <input
+            type="checkbox"
+            name="sortBy"
+            id=""
+            onClick={() => setSortBy("pc")}
+          />
+          "bla"
+        </label>
+      </form>
+      <p className="search-value" onClick={() => setSortBy("browser")}>
+        {options.params.platform}
+      </p>
       <div className="all-games-container">
         {data.map((Data, index) => (
           <GameCards
