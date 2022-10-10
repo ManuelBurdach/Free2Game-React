@@ -1,6 +1,6 @@
 // IMPORT COMPONENTS
 import MoreBtn from "../Btn/Read_showMore";
-
+import { Link } from "react-router-dom";
 // IMPORT CSS
 import "./GameCards.css";
 
@@ -41,8 +41,9 @@ const GameCards = (props) => {
           ) : (
             <></>
           )}
-
-          <MoreBtn value="READ MORE" />
+          <Link to={`/Detail/${props.id}`}>
+            <MoreBtn value="READ MORE" />
+          </Link>
           <div
             className={
               props.styling === "PC"
@@ -89,8 +90,9 @@ const GameCards = (props) => {
           ) : (
             <></>
           )}
-
-          <MoreBtn value="READ MORE" />
+          <Link to={`/Detail/${props.id}`}>
+            <MoreBtn value="READ MORE" />
+          </Link>
           <div
             className={
               props.styling === "PC"

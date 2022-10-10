@@ -57,6 +57,7 @@ const Home = () => {
               short_description={Data.short_description}
               platform={Data.platform}
               genre={Data.genre}
+              id={Data.id}
             />
           ))}
         </div>
@@ -76,6 +77,7 @@ const Home = () => {
               platform={Data.platform}
               genre={Data.genre}
               number={index}
+              id={Data.id}
             />
           ))}
         </div>
@@ -93,6 +95,7 @@ const Home = () => {
               short_description={Data.short_description}
               platform={Data.platform}
               genre={Data.genre}
+              id={Data.id}
             />
           ))}
         </div>
