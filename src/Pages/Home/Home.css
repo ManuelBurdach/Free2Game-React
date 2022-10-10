@@ -78,13 +78,39 @@
 
 /* ============================ RESPONSIVE ============================ */
 
-@media (max-width: 1350px) {
-  .home-games-container {
-    grid-template-columns: 1fr;
-    /* grid-template-rows: repeat(3, 1fr); */
+@media (max-width: 450px) {
+  .home-games-container,
+  .all-games-container,
+  .homeSection h2 {
+    margin-left: 20px;
   }
 
-  .all-games-container {
-    margin: 48px 30px 0 80px;
+  .homeSection div + button {
+    margin: 36px 0 0 20px;
+  }
+
+  /* TOP 4 GAMES PC */
+
+  .home-games-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .home-games-container > div:not(div:first-of-type) {
+    display: flex;
+
+    flex-direction: column;
+    width: auto;
+    /* height: 263px; */
+  }
+  .home-games-container > div:not(div:first-of-type) > img:first-of-type {
+    width: auto;
+    height: 100%;
+  }
+
+  .top-number-pc:not(.top-number-pc:first-child) {
+    position: static;
+    border-radius: 50%;
+    /* right: 52%; */
   }
 }
