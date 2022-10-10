@@ -130,7 +130,56 @@
   width: 100%;
 }
 
-/* ================================ Game Card Component (Home Page -> Top 4 Games for Browser) ================================ */
+/* ================================ DropDown Menü ================================ */
+
+.dropdown {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sortBy {
+  width: 250px;
+  margin: 1vw;
+  border-radius: 10px;
+}
+
+.sortBy div {
+  display: none;
+}
+
+.sortBy .activ {
+  display: block;
+}
+
+.sortBy p {
+  padding: 12px 24px;
+  border-radius: 12px;
+  max-width: 100%;
+  color: var(--font-color);
+  font-family: "Oswald Bold";
+  font-size: 20px;
+  text-transform: uppercase;
+
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.sortBy p:hover {
+  opacity: 0.8;
+}
+
+.sortBy p {
+  background-color: var(--button-bg-color);
+}
+
+.sortBy button {
+  background-color: var(--searchbar-bg-color);
+  width: 95%;
+  display: block;
+  margin: 5px auto;
+}
 
 /* ============================ RESPONSIVE ============================ */
 
