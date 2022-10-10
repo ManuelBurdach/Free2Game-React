@@ -25,23 +25,30 @@ function useFetch(options) {
   return { data };
 }
 
-//innerhalb von Home definieren wir 2 variabeln die wir zum filtrieren die Ergebnisse nutzen
 //dann definieren wir  die options constante die das GET und url beinhaltet und auch die filter params und headers mit key und API host
 const Home = () => {
-  let shorty = "release-date";
-  let platty = "browser";
+  // let shorty = "release-date";
+  // let platty = "browser";
   const options = {
     method: "GET",
     url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
-    params: { platform: platty, "sort-by": shorty },
+    params: { platform: "browser", "sort-by": "release-date" },
     headers: {
       "X-RapidAPI-Key": process.env.REACT_APP_API_KEY,
       "X-RapidAPI-Host": "free-to-play-games-database.p.rapidapi.com",
     },
   };
 
-  //dann rufen wir useFetch auch und übergeben die op
+  //dann rufen wir useFetch auch und übergeben die options als parameter
   const { data } = useFetch(options);
+  const { data: topPcGames } = useFetch({
+    ...options,
+    params: { platform: "pc", "sort-by": "popularity"  },
+  });
+  const { data: topBrowserGames } = useFetch({
+    ...options,
+    params: { platform: "browser", "sort-by": "popularity" },
+  });
   console.log(data);
   return (
     <>
@@ -63,10 +70,11 @@ const Home = () => {
         </div>
         <MoreBtn value="Show more" />
       </section>
+
       <section className="homeSection">
         <h2>Top 4 Games for PC in October 2022</h2>
         <div className="home-games-container">
-          {data.slice(5, 9).map((Data, index) => (
+          {topPcGames.slice(0, 4).map((Data, index) => (
             <GameCards
               card={"allGames"}
               styling={"PC"}
@@ -86,7 +94,7 @@ const Home = () => {
       <section className="homeSection">
         <h2>Top 4 Games for Browser in October 2022</h2>
         <div className="all-games-container">
-          {data.slice(10, 14).map((Data, index) => (
+          {topBrowserGames.slice(0, 4).map((Data, index) => (
             <GameCards
               card={"allGames"}
               key={"Game" + index}
