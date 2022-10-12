@@ -55,16 +55,9 @@ const Detail = () => {
             <p className="about-p">{game.description}</p>
           </article>
         </section>
-        <img
-          src={game.screenshots[0].image}
-          alt=""
-          className="detail-img"
-        ></img>
-        <img
-          src={game.screenshots[1].image}
-          alt=""
-          className="detail-img"
-        ></img>
+
+        <img src={game.screenshots[0].image} alt="" className="detail-img" />
+        <img src={game.screenshots[1].image} alt="" className="detail-img" />
 
         <section className="main-container">
           <article className="article-left">
@@ -89,25 +82,47 @@ const Detail = () => {
               <div className="small-container-left">
                 <div>
                   <h3>OS</h3>
-                  <p>{game.minimum_system_requirements.os}</p>
+
+                  {game.minimum_system_requirements !== undefined ? (
+                    <p>{game.minimum_system_requirements.os}</p>
+                  ) : (
+                    <p>No Informations</p>
+                  )}
                 </div>
                 <div>
                   <h3>Memory</h3>
-                  <p>{game.minimum_system_requirements.memory}</p>
+
+                  {game.minimum_system_requirements !== undefined ? (
+                    <p>{game.minimum_system_requirements.memory}</p>
+                  ) : (
+                    <p>No Informations</p>
+                  )}
                 </div>
                 <div>
                   <h3>Storage</h3>
-                  <p>{game.minimum_system_requirements.storage}</p>
+                  {game.minimum_system_requirements !== undefined ? (
+                    <p>{game.minimum_system_requirements.storage}</p>
+                  ) : (
+                    <p>No Informations</p>
+                  )}
                 </div>
               </div>
               <div className="small-container-right">
                 <div>
                   <h3>Processor</h3>
-                  <p>{game.minimum_system_requirements.processor}</p>
+                  {game.minimum_system_requirements !== undefined ? (
+                    <p>{game.minimum_system_requirements.processor}</p>
+                  ) : (
+                    <p>No Informations</p>
+                  )}
                 </div>
                 <div>
                   <h3>Graphics</h3>
-                  <p>{game.minimum_system_requirements.graphics}</p>
+                  {game.minimum_system_requirements !== undefined ? (
+                    <p>{game.minimum_system_requirements.graphics}</p>
+                  ) : (
+                    <p>No Informations</p>
+                  )}
                 </div>
                 <div>
                   <h3>Additional Notes</h3>
