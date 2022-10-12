@@ -12,16 +12,17 @@ header h1 {
   color: white;
   padding: 0.9rem;
   font-size: 1.8rem;
+  margin-left: 9%;
 }
 .sign {
-  margin-left: 6%;
-  padding: 1rem;
+  margin-left: 3%;
+  padding: 0;
   display: flex;
   flex-direction: row;
 }
 .sign img {
   max-height: 72%;
-  max-width: 72%;
+
   margin: 0.3rem 0;
 }
 .searchBar {
