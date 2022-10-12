@@ -187,7 +187,42 @@ const AllGames = () => {
         </form>
       </section>
       <div className="sortByContainer">
-        <p className="search-value">{options.params.platform}</p>
+        {sortBy == "all" ? (
+          <></>
+        ) : (
+          <p
+            className="search-value"
+            onClick={() => {
+              setSortBy("all");
+            }}
+          >
+            {sortBy}
+          </p>
+        )}
+        {sortByGenre == "all" ? (
+          <></>
+        ) : (
+          <p
+            className="search-value"
+            onClick={() => {
+              setSortByGenre("all");
+            }}
+          >
+            {sortByGenre}
+          </p>
+        )}
+        {sortByDate == "all" ? (
+          <></>
+        ) : (
+          <p
+            className="search-value"
+            onClick={() => {
+              setSortByDate("all");
+            }}
+          >
+            {sortByDate}
+          </p>
+        )}
       </div>
       <div className="all-games-container">
         {data.slice(0, 20).map((Data, index) => (
