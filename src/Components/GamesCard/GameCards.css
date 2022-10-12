@@ -38,6 +38,7 @@
 .search-value::before {
   content: url("../../Assets/Icons/Union-x-white.svg");
   margin-right: 13px;
+  cursor: pointer;
 }
 
 /* ================================ Img ================================ */

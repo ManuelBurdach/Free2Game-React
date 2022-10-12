@@ -9,7 +9,7 @@ import Search from "../../Assets/Img/Search.png";
 
 import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
   const location = useLocation();
 
   return (
@@ -28,6 +28,7 @@ const Header = () => {
           <img src={Search} alt="" />
         </div>
       </div>
+      {console.log(props.src)}
       <section
         className="heroSection"
         style={{
@@ -36,8 +37,10 @@ const Header = () => {
               ? lol
               : location.pathname === "/RecentlyAdded"
               ? lol2
-              : location.pathname === "/Detail//*"
-              ? lol3
+              : props == {}
+              ? lol4
+              : props.src != 0
+              ? props.src
               : lol4
           }")`,
         }}
@@ -47,7 +50,7 @@ const Header = () => {
           <h2>All GAMES</h2>
         ) : location.pathname === "/RecentlyAdded" ? (
           <h2>RECENTLY ADDED</h2>
-        ) : location.pathname === "/Detail//*" ? (
+        ) : location.pathname === "/Detail/" ? (
           <h2></h2>
         ) : (
           <h2>

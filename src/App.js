@@ -21,7 +21,11 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+        <Routes>
+          <Route path="/" element={<Header />} />
+          <Route path="/AllGames" element={<Header />} />
+          <Route path="/RecentlyAdded" element={<Header />} />
+        </Routes>
         <Nav />
         <main>
           <Routes>
