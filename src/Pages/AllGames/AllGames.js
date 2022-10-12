@@ -17,11 +17,7 @@ function useFetch(options) {
     axios.request(options).then(function (response) {
       setData(response.data);
     });
-  }, [
-    options.params.platform,
-    options.params.category,
-    options.params["sort-by"],
-  ]);
+  }, [options.params.platform, options.params.category, options.params["sort-by"]]);
   return { data };
 }
 
@@ -71,9 +67,7 @@ const AllGames = () => {
         <form className="sortBy">
           <p
             onClick={() => {
-              document
-                .querySelector(`.sortBy:nth-of-type(1) div`)
-                .classList.toggle("activ");
+              document.querySelector(`.sortBy:nth-of-type(1) div`).classList.toggle("activ");
             }}
           >
             Platform <span>V</span>
@@ -108,9 +102,7 @@ const AllGames = () => {
         <form className="sortBy">
           <p
             onClick={() => {
-              document
-                .querySelector(`.sortBy:nth-of-type(2) div`)
-                .classList.toggle("activ");
+              document.querySelector(`.sortBy:nth-of-type(2) div`).classList.toggle("activ");
             }}
           >
             Genre/Tag<span>V</span>
@@ -153,9 +145,7 @@ const AllGames = () => {
         <form className="sortBy">
           <p
             onClick={() => {
-              document
-                .querySelector(`.sortBy:nth-of-type(3) div`)
-                .classList.toggle("activ");
+              document.querySelector(`.sortBy:nth-of-type(3) div`).classList.toggle("activ");
             }}
           >
             Sort by<span>V</span>
