@@ -35,7 +35,7 @@ const Detail = () => {
 
   return game != null ? (
     <>
-      <Header src={game.screenshots.length > 0 ? game.screenshots[0].image : 0} />
+      <Header src={game.screenshots.length > 0 ? game.screenshots[0].image : 0} class="left" />
       <div className="Detail">
         <main>
           <h1>{game.title}</h1>

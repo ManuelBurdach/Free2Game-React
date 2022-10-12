@@ -13,7 +13,7 @@ const Header = (props) => {
   const location = useLocation();
 
   return (
-    <header>
+    <header className={props.class}>
       <div className="topBar">
         <div className="topBarLogo">
           <div className="sign">
@@ -50,12 +50,12 @@ const Header = (props) => {
           <h2>All GAMES</h2>
         ) : location.pathname === "/RecentlyAdded" ? (
           <h2>RECENTLY ADDED</h2>
-        ) : location.pathname === "/Detail/" ? (
-          <h2></h2>
-        ) : (
+        ) : location.pathname === "/" ? (
           <h2>
             FIND & TRACK THE <br /> BEST FREE-TO-PLAY <br /> GAMES!
           </h2>
+        ) : (
+          <h2></h2>
         )}
       </section>
     </header>
