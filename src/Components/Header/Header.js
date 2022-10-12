@@ -28,12 +28,14 @@ const Header = (props) => {
           <img src={Search} alt="" />
         </div>
       </div>
-      {console.log(props.src)}
+      {console.log(location.pathname)}
       <section
         className="heroSection"
         style={{
           backgroundImage: `url("${
-            location.pathname === "/AllGames"
+            location.pathname === "/"
+              ? lol4
+              : location.pathname === "/AllGames"
               ? lol
               : location.pathname === "/RecentlyAdded"
               ? lol2
