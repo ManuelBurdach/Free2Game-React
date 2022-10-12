@@ -22,6 +22,7 @@
 }
 
 .search-value {
+  text-transform: uppercase;
   margin: 36px 0 48px 80px;
   display: flex;
   flex-direction: row;
@@ -184,3 +185,12 @@
 }
 
 /* ============================ RESPONSIVE ============================ */
+@media (max-width: 500px) {
+  .dropdown {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .search-value {
+    margin: 36px 0 0 20px;
+  }
+}
