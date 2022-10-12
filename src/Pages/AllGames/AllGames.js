@@ -187,7 +187,9 @@ const AllGames = () => {
         </form>
       </section>
       <div className="sortByContainer">
-        <p className="search-value">{options.params.platform}</p>
+        {sortBy == "all" ? <></> : <p className="search-value">{sortBy}</p>}
+        {sortByGenre == "all" ? <></> : <p className="search-value">{sortByGenre}</p>}
+        {sortByDate == "all" ? <></> : <p className="search-value">{sortByDate}</p>}
       </div>
       <div className="all-games-container">
         {data.slice(0, 20).map((Data, index) => (
